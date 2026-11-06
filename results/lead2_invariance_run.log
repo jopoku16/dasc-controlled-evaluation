@@ -1,0 +1,75 @@
+   period  window  divides  max_abs_dev_of_|X_k|_over_200_shifts_all_k  max_abs_dev_of_banded_feature  daily_bin_k  phase_increment_median  phase_increment_min  phase_increment_max  target_2pi_over_24
+0      24     168     True                                1.421085e-14                   3.330669e-16            7                0.261799             0.261799             0.261799            0.261799
+1      24     336     True                                1.421085e-14                   2.775558e-16           14                0.261799             0.261799             0.261799            0.261799
+2      25     168    False                                8.390220e+00                   9.243709e-02            7                0.257355             0.190478             0.299788            0.261799
+3      25     336    False                                9.012000e+00                   4.624083e-02           14                0.254182             0.208770             0.290860            0.261799
+                                                    0            1
+dataset                                   electricity  electricity
+window                                            168          336
+n_eval                                           9000         9000
+frac_windows_with_gap                        0.037111     0.074444
+phase_minus_clock_mean_resultant_all         0.849896     0.860475
+phase_minus_clock_mean_resultant_gapfree     0.860744     0.897725
+phase_minus_clock_circ_sd_gapfree            0.547646     0.464525
+phase_minus_clock_mean_offset_rad            1.982114     1.982942
+phase_increment_median                       0.261814     0.261787
+phase_increment_q25                          0.255765     0.258385
+phase_increment_q75                          0.267693      0.26514
+target_increment                             0.261799     0.261799
+amp_R2_by_hour                               0.000011     0.000006
+band1_R2_by_hour                             0.000254     0.000126
+band2_R2_by_hour                             0.000246     0.000106
+band3_R2_by_hour                             0.000334     0.000189
+band4_R2_by_hour                              0.00034     0.000085
+band5_R2_by_hour                             0.000182     0.000088
+band6_R2_by_hour                             0.000772     0.000185
+band_R2_by_hour_mean                         0.000355      0.00013
+band_R2_by_day_mean                          0.924367     0.970149
+       dataset  window                      distance  n_pairs  spearman_with_circular_hour_diff     ci_lo     ci_hi  spearman_with_lag  lag_ci_lo  lag_ci_hi
+0  electricity     168           magnitude (6 bands)   270000                         -0.002192 -0.006090  0.001746           0.139365   0.114523   0.163539
+1  electricity     168                   phase chord   270000                          0.715286  0.684827  0.743728          -0.002659  -0.006634   0.000974
+2  electricity     168     magnitude + phase (w = 1)   270000                          0.715136  0.684725  0.743480           0.002029  -0.001949   0.005823
+3  electricity     168  clock-hour chord (benchmark)   270000                          1.000000  1.000000  1.000000          -0.002833  -0.006536   0.000735
+4  electricity     168   recency |t - i| (benchmark)   270000                         -0.002833 -0.006536  0.000735           1.000000   1.000000   1.000000
+5  electricity     336           magnitude (6 bands)   270000                         -0.002138 -0.005778  0.001699           0.269061   0.240823   0.297466
+6  electricity     336                   phase chord   270000                          0.739515  0.707450  0.770148          -0.003227  -0.007114   0.000418
+7  electricity     336     magnitude + phase (w = 1)   270000                          0.739406  0.707291  0.770039           0.000840  -0.003026   0.004382
+8  electricity     336  clock-hour chord (benchmark)   270000                          1.000000  1.000000  1.000000          -0.002833  -0.006536   0.000735
+9  electricity     336   recency |t - i| (benchmark)   270000                         -0.002833 -0.006536  0.000735           1.000000   1.000000   1.000000
+{'dataset': 'electricity', 'window': 1440, 'h': 0.8, 'fw': 336, 'n_steps': 600, 'mass_within_1h': 0.12501607196882025, 'pool_share_within_1h': 0.12502083333333333, 'neff_over_pool': 0.9997311891877587, 'weight_lag_spearman': 0.3259378254707556, 'forecaster': 'naive24'}
+{'dataset': 'electricity', 'window': 1440, 'h': 0.35, 'fw': 168, 'n_steps': 600, 'mass_within_1h': 0.12495476398297979, 'pool_share_within_1h': 0.12502083333333333, 'neff_over_pool': 0.9728467241067623, 'weight_lag_spearman': 0.16800746356000149, 'forecaster': 'ridge'}
+                                                 0         1
+dataset                                    weather   weather
+window                                         168       336
+n_eval                                       18000     18000
+frac_windows_with_gap                          0.0       0.0
+phase_minus_clock_mean_resultant_all      0.990676  0.994496
+phase_minus_clock_mean_resultant_gapfree  0.990676  0.994496
+phase_minus_clock_circ_sd_gapfree         0.136877   0.10506
+phase_minus_clock_mean_offset_rad         1.995551   1.99397
+phase_increment_median                    0.261619  0.261799
+phase_increment_q25                       0.255637   0.25861
+phase_increment_q75                       0.266953  0.264681
+target_increment                          0.261799  0.261799
+amp_R2_by_hour                            0.000023  0.000003
+band1_R2_by_hour                          0.001448  0.000767
+band2_R2_by_hour                          0.001455   0.00083
+band3_R2_by_hour                           0.00054  0.000341
+band4_R2_by_hour                           0.00059  0.000457
+band5_R2_by_hour                          0.000475  0.000353
+band6_R2_by_hour                          0.000979  0.000525
+band_R2_by_hour_mean                      0.000914  0.000546
+band_R2_by_day_mean                       0.776869  0.928459
+   dataset  window                      distance  n_pairs  spearman_with_circular_hour_diff     ci_lo     ci_hi  spearman_with_lag  lag_ci_lo  lag_ci_hi
+0  weather     168           magnitude (6 bands)   540000                          0.000249 -0.002430  0.002839           0.111142   0.092724   0.129590
+1  weather     168                   phase chord   540000                          0.982652  0.981527  0.983689          -0.003250  -0.005946  -0.000662
+2  weather     168     magnitude + phase (w = 1)   540000                          0.982651  0.981525  0.983688          -0.003192  -0.005885  -0.000594
+3  weather     168  clock-hour chord (benchmark)   540000                          1.000000  1.000000  1.000000          -0.003258  -0.005903  -0.000665
+4  weather     168   recency |t - i| (benchmark)   540000                         -0.003258 -0.005903 -0.000665           1.000000   1.000000   1.000000
+5  weather     336           magnitude (6 bands)   540000                          0.000105 -0.002565  0.002943           0.192060   0.172319   0.209811
+6  weather     336                   phase chord   540000                          0.991035  0.990456  0.991565          -0.003359  -0.005998  -0.000751
+7  weather     336     magnitude + phase (w = 1)   540000                          0.991035  0.990456  0.991565          -0.003311  -0.005949  -0.000699
+8  weather     336  clock-hour chord (benchmark)   540000                          1.000000  1.000000  1.000000          -0.003258  -0.005903  -0.000665
+9  weather     336   recency |t - i| (benchmark)   540000                         -0.003258 -0.005903 -0.000665           1.000000   1.000000   1.000000
+{'dataset': 'weather', 'window': 2160, 'h': 0.8, 'fw': 168, 'n_steps': 600, 'mass_within_1h': 0.12500038788982773, 'pool_share_within_1h': 0.125, 'neff_over_pool': 0.9999992813176535, 'weight_lag_spearman': 0.10243854904244806, 'forecaster': 'naive24'}
+{'dataset': 'weather', 'window': 2160, 'h': 0.35, 'fw': 336, 'n_steps': 600, 'mass_within_1h': 0.12499999601105344, 'pool_share_within_1h': 0.125, 'neff_over_pool': 0.9999989471422986, 'weight_lag_spearman': 0.24422421279834025, 'forecaster': 'ridge'}

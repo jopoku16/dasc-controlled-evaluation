@@ -1,0 +1,11 @@
+scenario,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+pure_drift,naive1,rolling,2,180,,,,,,,,,
+pure_drift,naive1,aci_clip,12,360,0.005,,,,,,,,
+pure_drift,naive1,aci_noclip,12,360,0.005,,,,,,,,
+pure_drift,naive1,pid,24,360,,0.05,0.001,0.01,,,,,
+pure_drift,naive1,decay,12,180,,,,,0.99,,,,
+pure_drift,naive1,spectral_fixed,12,180,,,,,,0.35,64.0,,
+pure_drift,naive1,spectral_aci,36,360,0.01,,,,,0.8,32.0,,
+pure_drift,naive1,dasc_fixed,48,180,,,,,,0.35,64.0,0.45,0.25
+pure_drift,naive1,dasc_clip,48,360,,,,,,0.35,64.0,0.45,0.5
+pure_drift,naive1,dasc_noclip,48,360,,,,,,0.35,64.0,0.45,0.5

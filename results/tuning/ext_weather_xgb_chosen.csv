@@ -1,0 +1,11 @@
+dataset,forecaster,variant,method,n_configs,stages,dev_score_grid,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac,dev_score_fullrun,stage1_gamma
+weather,xgb,aci_clip_ext,aci_clip,14,factorial,3.8356856406006243,1080,0.05,,,,,,,,,3.8356856406006243,
+weather,xgb,aci_noclip_ext,aci_noclip,14,factorial,4.2374530589913855,2160,0.005,,,,,,,,,4.2374530589913855,
+weather,xgb,pid_ext,pid,56,factorial,3.900905099696757,2160,,0.1,0.001,0.01,,,,,,3.900905099696757,
+weather,xgb,spectral_fixed_ext,spectral_fixed,28,factorial,4.294398474719768,1080,,,,,,0.004745,168.0,,,4.294398474719768,
+weather,xgb,spectral_aci_ext,spectral_aci,196,factorial,3.7618030374886042,1080,0.1,,,,,0.01898,168.0,,,3.7618030374886042,
+weather,xgb,dasc_clip_ext,dasc_clip,69,main 48 + stage1 7 + stage2 14,3.8104807046362956,1080,0.05,,,,,0.01898,168.0,0.15,0.5,3.8104807046362956,0.05
+weather,xgb,dasc_clip_wide,dasc_clip,133,stage0 112 + stage1 7 + stage2 14,3.8104807046362956,1080,0.05,,,,,0.01898,168.0,0.15,0.5,3.8104807046362956,0.05
+weather,xgb,dasc_noclip_ext,dasc_noclip,69,main 48 + stage1 7 + stage2 14,4.18238923848721,1080,0.005,,,,,0.004745,168.0,0.15,0.25,4.18238923848721,0.005
+weather,xgb,dasc_noclip_wide,dasc_noclip,133,stage0 112 + stage1 7 + stage2 14,4.070843125571284,2160,0.015,,,,,0.004745,168.0,0.15,0.5,4.070843125571284,0.015
+weather,xgb,dasc_fixed_ext,dasc_fixed,62,main 48 + h x lambda 14,4.549914094034517,1080,,,,,,0.001455,336.0,0.15,0.25,4.549914094034517,

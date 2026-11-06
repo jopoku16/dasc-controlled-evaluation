@@ -1,0 +1,35 @@
+Mixing bound checks
+[part 1] m=3 uniform a=4 u=0.05: empirical=0.1587, blocked bound=1.0000, iid Hoeffding (not valid here)=0.3306
+[part 1] m=3 uniform a=4 u=0.10: empirical=0.0054, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0015
+[part 1] m=3 uniform a=4 u=0.15: empirical=0.0000, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=3 uniform a=4 u=0.20: empirical=0.0000, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=3 uniform a=4 u=0.30: empirical=0.0000, blocked bound=0.5280, iid Hoeffding (not valid here)=0.0000
+[part 1] m=3 kernel  a=4 u=0.05: empirical=0.2208, blocked bound=1.0000, iid Hoeffding (not valid here)=0.6037
+[part 1] m=3 kernel  a=4 u=0.10: empirical=0.0140, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0166
+[part 1] m=3 kernel  a=4 u=0.15: empirical=0.0003, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=3 kernel  a=4 u=0.20: empirical=0.0000, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=3 kernel  a=4 u=0.30: empirical=0.0000, blocked bound=0.6431, iid Hoeffding (not valid here)=0.0000
+[part 1] m=10 uniform a=11 u=0.05: empirical=0.3747, blocked bound=1.0000, iid Hoeffding (not valid here)=0.3306
+[part 1] m=10 uniform a=11 u=0.10: empirical=0.0677, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0015
+[part 1] m=10 uniform a=11 u=0.15: empirical=0.0057, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=10 uniform a=11 u=0.20: empirical=0.0003, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=10 uniform a=11 u=0.30: empirical=0.0000, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=10 kernel  a=11 u=0.05: empirical=0.4027, blocked bound=1.0000, iid Hoeffding (not valid here)=0.6263
+[part 1] m=10 kernel  a=11 u=0.10: empirical=0.0897, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0192
+[part 1] m=10 kernel  a=11 u=0.15: empirical=0.0103, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0001
+[part 1] m=10 kernel  a=11 u=0.20: empirical=0.0007, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 1] m=10 kernel  a=11 u=0.30: empirical=0.0000, blocked bound=1.0000, iid Hoeffding (not valid here)=0.0000
+[part 2] old remark arithmetic: 4*floor(360/24)*rho^23 with rho=e^(-1/10) = 6.016 (claimed below 1e-3)
+[part 2] rho^23 = 0.1003; the remark would need rho <= 0.620
+[part 2] n=360, equal weights, rho=e^(-1/10), eta=0.1: best block length a=45, mu=4 blocks per parity, penalty=0.0667, deviation u=1.547 (compare alpha=0.1; iid term sqrt(log(2/eta)/(2n))=0.0645)
+[part 2] n=2160, equal weights, rho=e^(-1/10), eta=0.1: best block length a=67, mu=17 blocks per parity, penalty=0.0394, deviation u=0.720 (compare alpha=0.1; iid term sqrt(log(2/eta)/(2n))=0.0263)
+[part 2] n=20000, equal weights, rho=e^(-1/10), eta=0.1: best block length a=90, mu=112 blocks per parity, penalty=0.0274, deviation u=0.269 (compare alpha=0.1; iid term sqrt(log(2/eta)/(2n))=0.0087)
+[part 2] DASC weights at t=600 (n=360, neff=359.2): best a=46, mu=4, penalty=0.0603, deviation u=1.551
+[part 2] DASC weights at t=1000 (n=360, neff=67.9): best a=83, mu=3, penalty=0.0010, deviation u=2.715
+[part 2] DASC weights at t=1300 (n=360, neff=347.3): best a=48, mu=4, penalty=0.0494, deviation u=1.509
+[part 3] block-constant process g=64, n=6400, u=0.10: empirical tail=0.3664, old lemma exponential term=1.34e-03, correct block Hoeffding=0.2707
+[part 3] block-constant process g=64, n=6400, u=0.15: empirical tail=0.1336, old lemma exponential term=6.09e-08, correct block Hoeffding=0.0222
+[part 3] block-constant process g=64, n=6400, u=0.20: empirical tail=0.0549, old lemma exponential term=5.07e-14, correct block Hoeffding=0.0007
+[part 3] note: this process has beta(k) = (1 - k/g)^+ under a uniformly random phase, which is not below c0 rho^k for any rho with rho^g small, so it is NOT a counterexample to the old lemma's statement; it shows only that the exponential term with n_eff = n cannot come from the gap blocks, which is the step the old proof asserted.
+
+mixing exit 0

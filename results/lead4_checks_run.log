@@ -1,0 +1,29 @@
+C1 identity (I1) max |sum pi p - alpha| over grid, 3 weights x 2 ratios: 3.33e-16
+C2 identity (I3) max |sum pi s - 1|: 2.22e-16; analytic slope vs central difference, max relative gap: 8.90e-09
+C3 lattice: max distance of (alpha_t - alpha_0)/(gamma alpha_0) from an integer over 20000 steps: 8.32e-12
+C4 linearisation error F1-F4: max by gamma*m:
+gamma_m
+0.25     0.0005
+0.50     0.0011
+0.75     0.0012
+1.00     0.0027
+1.50     0.0043
+2.25     0.0085
+2.50     0.0115
+3.00     0.0175
+4.50     0.0364
+7.50     0.0589
+9.00     0.0644
+22.50    0.0786
+C5 ODE error F2-F4: max 0.00138  median 0.00026 | closure error F3-F4: max 0.000192  median 4e-06
+C5b largest ODE error occurs at: {'gamma': 0.05, 'm': 50.0, 'rho': 1.5} ; stationary sd of alpha there (from closure): 0.04095599980699531
+C6 weighted quantile: first order versus exact (rho, w, miss_1 exact / linear, miss_2 exact / linear):
+   rho=1.5 w=0.6: 0.04531 / 0.04440   0.14694 / 0.14587
+   rho=1.5 w=0.75: 0.06212 / 0.05612   0.12608 / 0.11955
+   rho=1.5 w=0.9: 0.08349 / 0.06785   0.10930 / 0.09322
+   rho=2.0 w=0.6: 0.01559 / 0.01379   0.16314 / 0.15950
+   rho=2.0 w=0.75: 0.03557 / 0.02108   0.13246 / 0.11215
+   rho=2.0 w=0.9: 0.07047 / 0.02837   0.11095 / 0.06480
+   rho=3.0 w=0.6: 0.00055 / 0.00029   0.16664 / 0.16009
+   rho=3.0 w=0.75: 0.00794 / 0.00054   0.13333 / 0.10042
+   rho=3.0 w=0.9: 0.05338 / 0.00079   0.11111 / 0.04074

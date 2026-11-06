@@ -1,0 +1,9 @@
+variant,label,n_cells,orig_bottom,orig_top,ext_bottom,ext_top,h_scaled_chosen,h_edge_bottom,h_edge_top
+aci_clip_ext,ACI (projected),9,0.0,6.0,0,3,,,
+aci_noclip_ext,ACI (free),9,1.0,0.0,1,0,,,
+pid_ext,PID-style ($k_p$),9,0.0,8.0,0,4,,,
+spectral_aci_ext,Spectral ACI,9,0.0,8.0,0,5,4.0,0.0,2.0
+dasc_clip_ext,DASC (projected),9,0.0,5.0,0,3,2.0,0.0,1.0
+dasc_noclip_ext,DASC (free),9,1.0,0.0,1,0,4.0,0.0,1.0
+dasc_clip_wide,"DASC (projected), stage 0",9,,,0,2,5.0,0.0,1.0
+dasc_noclip_wide,"DASC (free), stage 0",9,,,1,0,8.0,1.0,0.0

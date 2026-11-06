@@ -1,0 +1,11 @@
+scenario,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+stress_mixed_drift,ridge,rolling,2,180,,,,,,,,,
+stress_mixed_drift,ridge,aci_clip,12,360,0.015,,,,,,,,
+stress_mixed_drift,ridge,aci_noclip,12,180,0.01,,,,,,,,
+stress_mixed_drift,ridge,pid,24,360,,0.025,0.001,0.01,,,,,
+stress_mixed_drift,ridge,decay,12,360,,,,,0.985,,,,
+stress_mixed_drift,ridge,spectral_fixed,12,180,,,,,,0.55,64.0,,
+stress_mixed_drift,ridge,spectral_aci,36,360,0.015,,,,,0.8,64.0,,
+stress_mixed_drift,ridge,dasc_fixed,48,180,,,,,,0.55,32.0,0.15,0.5
+stress_mixed_drift,ridge,dasc_clip,48,360,,,,,,0.8,32.0,0.45,0.5
+stress_mixed_drift,ridge,dasc_noclip,48,180,,,,,,0.8,64.0,0.45,0.5

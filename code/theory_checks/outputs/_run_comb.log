@@ -1,0 +1,30 @@
+Combination proposition check (free update, eta = 0.1).
+mean_alpha_t must be >= alpha - mean_Lambda - telescoping - frac_B_complement - M_T.
+The martingale term M_T is of order T^{-1/2} and is omitted here (its omission can only make the
+check stricter when it is positive); 'margin' is lhs minus the right-hand side without M_T.
+mean_alpha_minus_p shows the per-step gap alpha_t - p_t averaged over time (the realised version
+of 'the adaptive level sits above the conditional miss probability').
+
+           model  seed    T  mean_alpha_t  mean_p_t  mean_Lambda  telescoping  frac_B_complement  rhs_without_martingale  margin  mean_alpha_minus_p
+     A_exogenous     0 1180        0.1005    0.1071       0.2220       0.0517             0.0000                 -0.1737  0.2742             -0.0066
+     A_exogenous     1 1180        0.1056    0.1004       0.2196       0.0517             0.0000                 -0.1713  0.2769              0.0052
+     A_exogenous     2 1180        0.1094    0.0956       0.2227       0.0517             0.0000                 -0.1744  0.2838              0.0139
+     A_exogenous     3 1180        0.1053    0.1108       0.2225       0.0517             0.0000                 -0.1742  0.2795             -0.0055
+     A_exogenous     4 1180        0.1065    0.0892       0.2225       0.0517             0.0000                 -0.1742  0.2807              0.0174
+     A_exogenous     5 1180        0.1011    0.1054       0.2255       0.0517             0.0000                 -0.1772  0.2783             -0.0042
+     A_exogenous     6 1180        0.1074    0.1076       0.2311       0.0517             0.0000                 -0.1828  0.2903             -0.0001
+     A_exogenous     7 1180        0.0987    0.0979       0.2244       0.0517             0.0000                 -0.1761  0.2748              0.0008
+     A_exogenous     8 1180        0.1088    0.0974       0.2185       0.0517             0.0000                 -0.1702  0.2790              0.0114
+     A_exogenous     9 1180        0.1153    0.1079       0.2299       0.0517             0.0000                 -0.1816  0.2969              0.0074
+B1_endog_phi0.95     0 1180        0.0964    0.1132       0.1748       0.0517             0.0000                 -0.1265  0.2229             -0.0168
+B1_endog_phi0.95     1 1180        0.1024    0.1033       0.1623       0.0517             0.0000                 -0.1140  0.2164             -0.0009
+B1_endog_phi0.95     2 1180        0.1009    0.0938       0.1815       0.0517             0.0000                 -0.1332  0.2341              0.0070
+B1_endog_phi0.95     3 1180        0.0998    0.1102       0.1780       0.0517             0.0000                 -0.1297  0.2295             -0.0104
+B1_endog_phi0.95     4 1180        0.0940    0.0887       0.1748       0.0517             0.0000                 -0.1265  0.2205              0.0052
+B1_endog_phi0.95     5 1180        0.1008    0.1077       0.1667       0.0517             0.0000                 -0.1184  0.2191             -0.0070
+B1_endog_phi0.95     6 1180        0.1031    0.1134       0.1853       0.0517             0.0000                 -0.1370  0.2402             -0.0103
+B1_endog_phi0.95     7 1180        0.0872    0.0955       0.1628       0.0517             0.0000                 -0.1145  0.2017             -0.0083
+B1_endog_phi0.95     8 1180        0.1003    0.0957       0.1572       0.0517             0.0000                 -0.1089  0.2092              0.0047
+B1_endog_phi0.95     9 1180        0.1038    0.1045       0.1673       0.0517             0.0000                 -0.1190  0.2227             -0.0008
+
+comb exit 0

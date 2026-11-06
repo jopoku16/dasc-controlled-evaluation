@@ -1,0 +1,25 @@
+empirical residual sd R1, R2: 0.26719593430549393 0.8015653547640721  ratio: 2.9999159861752087  0.9-quantiles: 0.7300284055761013 2.1870269385295376
+tables built 22.969575881958008
+aci_noclip gamma=0.01 (selected) rerun 0.9931 0.8046 stored (0.9931333333333332, 0.8046206896551724) ideal 0.9974 0.8026 windowCL 0.9935 0.8042
+aci_noclip gamma=0.015 rerun 0.9837 0.8126 stored (0.9837333333333332, 0.8126034482758621) ideal 0.9912 0.8088 windowCL 0.9839 0.8124
+aci_clip gamma=0.015 rerun 0.9837 0.8124 stored (0.9837, 0.8123620689655172) ideal 0.9912 0.8088 windowCL 0.9839 0.8124
+aci_clip gamma=0.05 (selected) rerun 0.9368 0.8566 stored (0.93675, 0.8565862068965516) ideal 0.9383 0.8617 windowCL 0.9326 0.8647
+aci_noclip gamma=0.05 rerun 0.9327 0.8645 stored (nan, nan) ideal 0.9383 0.8617 windowCL 0.9326 0.8647
+aci_noclip gamma=0.03 rerun 0.9534 0.8426 stored (nan, nan) ideal 0.9617 0.8383 windowCL 0.9531 0.8429
+     w_same  share_same
+r                      
+0  0.736023    0.553792
+1  0.646774    0.525863
+                                                                     quantity       R1       R2
+                             spectral_fixed regime coverage R1, R2: paper CSV 0.978533 0.824293
+                                            spectral_fixed re-run (100 seeds) 0.978533 0.824293
+                        formula (ii) at the realised kernel masses (20 seeds) 0.982651 0.827318
+formula at the unweighted window composition (rolling conformal, fixed level) 0.999693 0.805772
+                                         paper rolling conformal coverage CSV 0.998800 0.803034
+                   mean same-regime kernel weight mass w (regime 1, regime 2) 0.736023 0.646774
+                              mean same-regime share in the unweighted window 0.553792 0.525863
+                                spectral ACI gamma=0.015: stored CSV (R1, R2) 0.946567 0.849362
+                spectral ACI gamma=0.015: closure with mean kernel mass pi(t) 0.947127 0.849609
+                                 spectral ACI gamma=0.03: stored CSV (R1, R2) 0.926100 0.868293
+                 spectral ACI gamma=0.03: closure with mean kernel mass pi(t) 0.926530 0.870656
+total seconds 457.4807999134064

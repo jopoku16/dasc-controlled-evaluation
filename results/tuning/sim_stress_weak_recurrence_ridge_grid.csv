@@ -1,0 +1,255 @@
+scenario,forecaster,method,config_id,dev_score,dev_coverage,dev_width,eval_coverage,eval_width,eval_score,n_streams,config,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac,selected
+stress_weak_recurrence,ridge,aci_clip,0,2.707236730282263,0.8989062499999999,2.1448974848349005,,,,10,"{'window': 180, 'gamma': 0.005}",180,0.005,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,1,2.706360762237994,0.899140625,2.157679713638424,,,,10,"{'window': 180, 'gamma': 0.01}",180,0.01,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,2,2.70364841229382,0.8990625,2.1549485919028295,,,,10,"{'window': 180, 'gamma': 0.015}",180,0.015,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,3,2.7098519215754315,0.89875,2.154606505426373,,,,10,"{'window': 180, 'gamma': 0.02}",180,0.02,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,4,2.7158505119244682,0.8978906249999999,2.158493740587429,,,,10,"{'window': 180, 'gamma': 0.03}",180,0.03,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,5,2.742634666602267,0.89515625,2.1640950869864244,,,,10,"{'window': 180, 'gamma': 0.05}",180,0.05,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,6,2.713327801928515,0.899140625,2.1437428838867056,,,,10,"{'window': 360, 'gamma': 0.005}",360,0.005,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,7,2.7005169567584324,0.899453125,2.1506424194176543,,,,10,"{'window': 360, 'gamma': 0.01}",360,0.01,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,8,2.6977574761160446,0.89875,2.139638992813098,,,,10,"{'window': 360, 'gamma': 0.015}",360,0.015,,,,,,,,,True
+stress_weak_recurrence,ridge,aci_clip,9,2.699916556671427,0.897421875,2.139856179886339,,,,10,"{'window': 360, 'gamma': 0.02}",360,0.02,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,10,2.7160462043561036,0.89578125,2.1418666906657315,,,,10,"{'window': 360, 'gamma': 0.03}",360,0.03,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_clip,11,2.738346782059566,0.892578125,2.138758867334925,,,,10,"{'window': 360, 'gamma': 0.05}",360,0.05,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,0,2.707236730282263,0.8989062499999999,2.1448974848349005,,,,10,"{'window': 180, 'gamma': 0.005}",180,0.005,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,1,2.7067895330044474,0.899140625,2.1582172058182616,,,,10,"{'window': 180, 'gamma': 0.01}",180,0.01,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,2,inf,0.8992968749999999,inf,,,,10,"{'window': 180, 'gamma': 0.015}",180,0.015,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,3,inf,0.899609375,inf,,,,10,"{'window': 180, 'gamma': 0.02}",180,0.02,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,4,inf,0.899609375,inf,,,,10,"{'window': 180, 'gamma': 0.03}",180,0.03,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,5,inf,0.899609375,inf,,,,10,"{'window': 180, 'gamma': 0.05}",180,0.05,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,6,2.713327801928515,0.899140625,2.1437428838867056,,,,10,"{'window': 360, 'gamma': 0.005}",360,0.005,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,7,2.7027210381233067,0.8998437499999999,2.1553318174328617,,,,10,"{'window': 360, 'gamma': 0.01}",360,0.01,,,,,,,,,True
+stress_weak_recurrence,ridge,aci_noclip,8,inf,0.8996875,inf,,,,10,"{'window': 360, 'gamma': 0.015}",360,0.015,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,9,inf,0.899609375,inf,,,,10,"{'window': 360, 'gamma': 0.02}",360,0.02,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,10,inf,0.8996875,inf,,,,10,"{'window': 360, 'gamma': 0.03}",360,0.03,,,,,,,,,False
+stress_weak_recurrence,ridge,aci_noclip,11,inf,0.899765625,inf,,,,10,"{'window': 360, 'gamma': 0.05}",360,0.05,,,,,,,,,False
+stress_weak_recurrence,ridge,dasc_clip,0,2.8304672336628043,0.8975,2.2524179803390867,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,1,2.75806718295287,0.898671875,2.20688330574727,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,2,2.7826429381278386,0.8982812499999999,2.226020071247592,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,3,2.7399291835228037,0.89875,2.195178594409198,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,4,2.797363104208077,0.8979687500000001,2.2348552971811415,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,5,2.7296997658816164,0.898828125,2.182797876536088,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,6,2.776521827970053,0.8982812499999999,2.222552675323799,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,7,2.72610010336199,0.898828125,2.1796693757499463,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,8,2.7639066894227353,0.89875,2.208095278808198,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,9,2.735662310176717,0.899140625,2.1763780566406106,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,10,2.7428819230681163,0.899140625,2.202168437417865,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,11,2.725486793217967,0.89921875,2.1807226286630437,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,12,2.7361889116231226,0.8989062499999999,2.1987300799068974,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,13,2.717910681883526,0.89921875,2.1651408564066674,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,14,2.7251566971942642,0.8989843750000001,2.1781584954353335,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,15,2.717588590530702,0.899140625,2.1604764787632793,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,16,2.744577833068351,0.8989843750000001,2.189998512532855,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,17,2.7375520502584587,0.899140625,2.1801876905065347,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,18,2.7299932649573466,0.899140625,2.184900050905804,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,19,2.7207656395093958,0.8995312500000001,2.165110628983206,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,20,2.7185375410416617,0.89921875,2.1650352036823564,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,21,2.7175832225080425,0.89921875,2.16144759774357,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,22,2.7168997807262647,0.89921875,2.162622273040501,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,23,2.7127344712043913,0.8990625,2.156411017034222,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,24,2.783804389060642,0.8982812499999999,2.2254261976178777,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,25,2.7404794886650885,0.8989843750000001,2.186735222827264,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,26,2.7466806794725978,0.8985937500000001,2.187231659580957,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,27,2.7207765823146444,0.89875,2.1781626333182333,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,28,2.7594517551737447,0.898828125,2.188134038301274,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,29,2.7179641823228766,0.8989062499999999,2.1732621480427676,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,30,2.7404231940376476,0.89875,2.1737138129439,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,31,2.7113740815128047,0.898828125,2.1637421831171944,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,32,2.7437035722888927,0.89921875,2.197975241120802,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,33,2.7257100964889918,0.899140625,2.1788489223663667,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,34,2.7161506226812273,0.898828125,2.166340885111519,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,35,2.70349472594299,0.8989843750000001,2.151077290610258,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,36,2.716270225121121,0.8989062499999999,2.165125273997873,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,37,2.7079158212680032,0.8990625,2.1590302843308664,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,38,2.708897320525497,0.898828125,2.1584408943515387,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,39,2.707598214182033,0.8990625,2.1551752181340853,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,40,2.7281517936715876,0.89921875,2.182876977475952,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,41,2.7205556472318535,0.899375,2.167195206866863,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,42,2.711541074874252,0.8990625,2.1553120151879566,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,43,2.704427042831269,0.8990625,2.155711013935728,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,44,2.709055481111857,0.8989062499999999,2.1571049353716036,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,45,2.7047409422731157,0.899140625,2.159832657045431,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_clip,46,2.7077474718218846,0.8989062499999999,2.1521241793427226,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_clip,47,2.7018521314935753,0.898828125,2.150103627982603,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.5,True
+stress_weak_recurrence,ridge,dasc_fixed,0,2.7996623316656004,0.866796875,2.024498723034005,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,1,2.717521144668851,0.8833593750000001,2.06706633983975,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,2,2.7542592428773163,0.876328125,2.044536698295406,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,3,2.7074471724718325,0.885390625,2.067822530256308,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,4,2.7616790372822564,0.8751562500000001,2.039192734959946,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,5,2.7058920752546896,0.8861718749999999,2.0668066116562303,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,6,2.742234709874073,0.87796875,2.0464651695368046,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,7,2.7017658708886816,0.8853125000000001,2.060295776300209,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,8,2.731123364561493,0.88375,2.0648404219936984,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,9,2.704739616827422,0.887421875,2.0730821287526706,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,10,2.712512059581653,0.8862500000000001,2.069518115137254,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,11,2.698853036167213,0.8875781249999999,2.0724889030200684,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,12,2.7088902271945914,0.885703125,2.0696781897184344,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,13,2.6962860924500704,0.889453125,2.071373399971306,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.25,True
+stress_weak_recurrence,ridge,dasc_fixed,14,2.7054291168198885,0.8866406250000001,2.062875905967668,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,15,2.6984121631444893,0.8881249999999999,2.0673407010665077,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,16,2.712809486849225,0.8871874999999999,2.077791030706569,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,17,2.7049653440713497,0.88890625,2.081533636798715,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,18,2.705043389323909,0.886953125,2.0755058531290387,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,19,2.6994290553644715,0.88828125,2.0744324705451227,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,20,2.702265406872122,0.8884375,2.0737090062911183,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,21,2.697328885372879,0.889375,2.07407696581533,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,22,2.703586641268733,0.889296875,2.0679213552605047,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,23,2.700526565972069,0.889296875,2.0701005800156795,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,24,2.755529373358196,0.8764062499999999,2.04341136385338,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,25,2.7081828565875727,0.88640625,2.0680584310311643,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,26,2.7266037658420146,0.879140625,2.039063828755393,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,27,2.7023308334328124,0.8848437499999999,2.0522070811275013,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,28,2.7410187098711156,0.8803906250000001,2.0410857410086587,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,29,2.7072166444638057,0.8828125,2.0435205783621315,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,30,2.7359640637960054,0.8780468750000001,2.0274652315737702,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,31,2.716351113541331,0.8800000000000001,2.030185134310549,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,32,2.716979091922803,0.88671875,2.0689053044616674,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,33,2.6991956029882025,0.888046875,2.0729139371959437,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,34,2.7074704109028653,0.8853125000000001,2.0489550395777547,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,35,2.700271680980694,0.8868750000000001,2.056913347598872,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,36,2.7196109316420434,0.885,2.0447144321891986,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,37,2.71050362123336,0.884453125,2.0439772720555967,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,38,2.725039662785096,0.8819531250000001,2.027176313591706,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,39,2.720340958478894,0.881640625,2.0279187889258123,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,40,2.705430007413288,0.887109375,2.0726277863191966,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,41,2.69927576367407,0.88796875,2.073829266931364,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,42,2.70709640714104,0.886015625,2.0535419415675693,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,43,2.704777943532206,0.887109375,2.0589887226473644,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,44,2.717844721746457,0.8848437499999999,2.0448052028576105,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,45,2.714356736452406,0.8840625,2.0460793860261566,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_fixed,46,2.727670776001635,0.8823437500000001,2.028070537188401,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_fixed,47,2.7251451479640716,0.88203125,2.028386870994944,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,0,inf,0.8978125,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,1,2.757602259905492,0.89875,2.209808274762877,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,2,inf,0.8985937500000001,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,3,inf,0.8989843750000001,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,4,inf,0.8983593750000001,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,5,inf,0.8989843750000001,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,6,inf,0.8985156249999999,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,7,inf,0.8989843750000001,inf,,,,10,"{'window': 180, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,8,2.7645504933931027,0.898828125,2.2065540213301986,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,9,2.73565328877769,0.89921875,2.176895494085457,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,10,inf,0.89921875,inf,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,11,2.726396906864041,0.8992968749999999,2.1826631560167575,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,12,inf,0.8990625,inf,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,13,inf,0.899453125,inf,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,14,inf,0.89921875,inf,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,15,inf,0.89921875,inf,,,,10,"{'window': 180, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,16,2.745005436383543,0.8989843750000001,2.189628948844674,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,17,2.737790595197449,0.89921875,2.1795147623168196,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,18,inf,0.8992968749999999,inf,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,19,2.7219114524021326,0.8996875,2.165805597282321,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.15,0.5,True
+stress_weak_recurrence,ridge,dasc_noclip,20,inf,0.8992968749999999,inf,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,21,inf,0.8992968749999999,inf,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,22,inf,0.899453125,inf,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",180,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,23,inf,0.899375,inf,,,,10,"{'window': 180, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",180,,,,,,0.8,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,24,inf,0.8985156249999999,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,25,2.7419219584760173,0.8989843750000001,2.1876660881516528,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,26,inf,0.8989843750000001,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,27,inf,0.8989843750000001,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,28,inf,0.899140625,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,29,inf,0.899140625,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,30,inf,0.899140625,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.35,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,31,inf,0.89921875,inf,,,,10,"{'window': 360, 'h': 0.35, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.35,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,32,inf,0.8992968749999999,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,33,2.7278968108953703,0.89921875,2.181243033280296,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,34,inf,0.89921875,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,35,inf,0.8992968749999999,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,36,inf,0.8992968749999999,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,37,inf,0.899375,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,38,inf,0.8992968749999999,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.55,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,39,inf,0.899453125,inf,,,,10,"{'window': 360, 'h': 0.55, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.55,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,40,inf,0.899375,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,41,inf,0.899609375,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,42,inf,0.8992968749999999,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,43,inf,0.899375,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.15, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.15,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,44,inf,0.899375,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,45,inf,0.899453125,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.25, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.25,False
+stress_weak_recurrence,ridge,dasc_noclip,46,inf,0.899453125,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 32}",360,,,,,,0.8,32.0,0.45,0.5,False
+stress_weak_recurrence,ridge,dasc_noclip,47,inf,0.899453125,inf,,,,10,"{'window': 360, 'h': 0.8, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64}",360,,,,,,0.8,64.0,0.45,0.5,False
+stress_weak_recurrence,ridge,decay,0,2.69220144295434,0.890859375,2.0877696578810427,,,,10,"{'window': 180, 'decay': 0.97}",180,,,,,0.97,,,,,False
+stress_weak_recurrence,ridge,decay,1,2.6878515143322423,0.8901562500000001,2.080893444463155,,,,10,"{'window': 180, 'decay': 0.985}",180,,,,,0.985,,,,,False
+stress_weak_recurrence,ridge,decay,2,2.6911001080696764,0.89,2.07605166230465,,,,10,"{'window': 180, 'decay': 0.99}",180,,,,,0.99,,,,,False
+stress_weak_recurrence,ridge,decay,3,2.699420426338782,0.88890625,2.0681339406014407,,,,10,"{'window': 180, 'decay': 0.995}",180,,,,,0.995,,,,,False
+stress_weak_recurrence,ridge,decay,4,2.7059988951330096,0.887734375,2.0624668261762813,,,,10,"{'window': 180, 'decay': 0.998}",180,,,,,0.998,,,,,False
+stress_weak_recurrence,ridge,decay,5,2.7085633880717435,0.88734375,2.0601428106451545,,,,10,"{'window': 180, 'decay': 0.999}",180,,,,,0.999,,,,,False
+stress_weak_recurrence,ridge,decay,6,2.6915301808655783,0.8909375,2.0874532444836054,,,,10,"{'window': 360, 'decay': 0.97}",360,,,,,0.97,,,,,False
+stress_weak_recurrence,ridge,decay,7,2.6874765601617874,0.889609375,2.0769963395156337,,,,10,"{'window': 360, 'decay': 0.985}",360,,,,,0.985,,,,,True
+stress_weak_recurrence,ridge,decay,8,2.693226416020199,0.888359375,2.064321375329863,,,,10,"{'window': 360, 'decay': 0.99}",360,,,,,0.99,,,,,False
+stress_weak_recurrence,ridge,decay,9,2.711427926723032,0.8832812499999999,2.0380334571286336,,,,10,"{'window': 360, 'decay': 0.995}",360,,,,,0.995,,,,,False
+stress_weak_recurrence,ridge,decay,10,2.731708917854795,0.87859375,2.0158427298762054,,,,10,"{'window': 360, 'decay': 0.998}",360,,,,,0.998,,,,,False
+stress_weak_recurrence,ridge,decay,11,2.739462864473807,0.8780468750000001,2.0074187565276977,,,,10,"{'window': 360, 'decay': 0.999}",360,,,,,0.999,,,,,False
+stress_weak_recurrence,ridge,pid,0,2.847302379551456,0.8992968749999999,2.2832300577389577,,,,10,"{'window': 180, 'kp': 0.01, 'ki': 0.001, 'kd': 0.0}",180,,0.01,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,1,2.851197752396558,0.89921875,2.2826253117721538,,,,10,"{'window': 180, 'kp': 0.01, 'ki': 0.001, 'kd': 0.01}",180,,0.01,0.001,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,2,2.9383429433984256,0.8999218750000001,2.3602805952219854,,,,10,"{'window': 180, 'kp': 0.01, 'ki': 0.003, 'kd': 0.0}",180,,0.01,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,3,2.935943143852758,0.8995312500000001,2.3489960506210226,,,,10,"{'window': 180, 'kp': 0.01, 'ki': 0.003, 'kd': 0.01}",180,,0.01,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,4,2.793591994841069,0.8996875,2.229487859351375,,,,10,"{'window': 180, 'kp': 0.025, 'ki': 0.001, 'kd': 0.0}",180,,0.025,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,5,2.775172794747449,0.8996875,2.2066032197925245,,,,10,"{'window': 180, 'kp': 0.025, 'ki': 0.001, 'kd': 0.01}",180,,0.025,0.001,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,6,2.873737938783622,0.9,2.3146434085187684,,,,10,"{'window': 180, 'kp': 0.025, 'ki': 0.003, 'kd': 0.0}",180,,0.025,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,7,2.870155802715677,0.899765625,2.310774563742881,,,,10,"{'window': 180, 'kp': 0.025, 'ki': 0.003, 'kd': 0.01}",180,,0.025,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,8,2.7744873391164058,0.899765625,2.2325331196336666,,,,10,"{'window': 180, 'kp': 0.05, 'ki': 0.001, 'kd': 0.0}",180,,0.05,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,9,2.765453595863652,0.899609375,2.225682542470222,,,,10,"{'window': 180, 'kp': 0.05, 'ki': 0.001, 'kd': 0.01}",180,,0.05,0.001,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,10,2.8337781057031473,0.8998437499999999,2.2793854448098485,,,,10,"{'window': 180, 'kp': 0.05, 'ki': 0.003, 'kd': 0.0}",180,,0.05,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,11,2.8289650490594025,0.8998437499999999,2.282259142908968,,,,10,"{'window': 180, 'kp': 0.05, 'ki': 0.003, 'kd': 0.01}",180,,0.05,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,12,2.794305850294078,0.899609375,2.2336186693096427,,,,10,"{'window': 360, 'kp': 0.01, 'ki': 0.001, 'kd': 0.0}",360,,0.01,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,13,2.786644223926033,0.8992968749999999,2.2221032500184115,,,,10,"{'window': 360, 'kp': 0.01, 'ki': 0.001, 'kd': 0.01}",360,,0.01,0.001,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,14,2.919300823944734,0.899765625,2.3218011298449825,,,,10,"{'window': 360, 'kp': 0.01, 'ki': 0.003, 'kd': 0.0}",360,,0.01,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,15,2.9042962514250226,0.9,2.318470477337274,,,,10,"{'window': 360, 'kp': 0.01, 'ki': 0.003, 'kd': 0.01}",360,,0.01,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,16,2.7710412621899256,0.8996875,2.210619132926698,,,,10,"{'window': 360, 'kp': 0.025, 'ki': 0.001, 'kd': 0.0}",360,,0.025,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,17,2.7580399770353625,0.8998437499999999,2.193466423517914,,,,10,"{'window': 360, 'kp': 0.025, 'ki': 0.001, 'kd': 0.01}",360,,0.025,0.001,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,18,2.8512269388217772,0.899609375,2.276310440188227,,,,10,"{'window': 360, 'kp': 0.025, 'ki': 0.003, 'kd': 0.0}",360,,0.025,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,19,2.841976215202302,0.9,2.2763557758212514,,,,10,"{'window': 360, 'kp': 0.025, 'ki': 0.003, 'kd': 0.01}",360,,0.025,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,pid,20,2.768878135546746,0.899609375,2.2226965644842576,,,,10,"{'window': 360, 'kp': 0.05, 'ki': 0.001, 'kd': 0.0}",360,,0.05,0.001,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,21,2.757960785464243,0.899453125,2.194169409576065,,,,10,"{'window': 360, 'kp': 0.05, 'ki': 0.001, 'kd': 0.01}",360,,0.05,0.001,0.01,,,,,,True
+stress_weak_recurrence,ridge,pid,22,2.810521553206244,0.8999218750000001,2.2583066278820043,,,,10,"{'window': 360, 'kp': 0.05, 'ki': 0.003, 'kd': 0.0}",360,,0.05,0.003,0.0,,,,,,False
+stress_weak_recurrence,ridge,pid,23,2.8014725193346885,0.8998437499999999,2.2425064947337123,,,,10,"{'window': 360, 'kp': 0.05, 'ki': 0.003, 'kd': 0.01}",360,,0.05,0.003,0.01,,,,,,False
+stress_weak_recurrence,ridge,rolling,0,2.7129495657934086,0.884453125,2.0419028358103137,,,,10,{'window': 180},180,,,,,,,,,,True
+stress_weak_recurrence,ridge,rolling,1,2.751447491492791,0.874375,1.991737786806024,,,,10,{'window': 360},360,,,,,,,,,,False
+stress_weak_recurrence,ridge,spectral_aci,0,2.7445712846900934,0.8985937500000001,2.186974061333174,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.01, 'fw': 32}",180,0.01,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,1,2.714806860360757,0.898671875,2.1769074188776916,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.01, 'fw': 64}",180,0.01,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,2,2.7475117328884573,0.898671875,2.187588456969076,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.015, 'fw': 32}",180,0.015,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,3,2.7224443736056703,0.89875,2.1785947873626927,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.015, 'fw': 64}",180,0.015,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,4,2.7616763188620346,0.8973437499999999,2.197580593132572,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.03, 'fw': 32}",180,0.03,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,5,2.73739416414175,0.8982812499999999,2.1845258814994972,,,,10,"{'window': 180, 'h': 0.35, 'gamma': 0.03, 'fw': 64}",180,0.03,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,6,2.7108073803354564,0.8990625,2.1683896139398593,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.01, 'fw': 32}",180,0.01,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,7,2.7067243050416665,0.8990625,2.157617217526754,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.01, 'fw': 64}",180,0.01,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,8,2.7158570346455186,0.8989062499999999,2.1716290124962816,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.015, 'fw': 32}",180,0.015,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,9,2.7076690948656683,0.8990625,2.1530156455577836,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.015, 'fw': 64}",180,0.015,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,10,2.728835084117115,0.898125,2.170040257347213,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.03, 'fw': 32}",180,0.03,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,11,2.7205902014605323,0.898125,2.158731267141749,,,,10,"{'window': 180, 'h': 0.55, 'gamma': 0.03, 'fw': 64}",180,0.03,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,12,2.7055713429027053,0.899140625,2.158728381193745,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.01, 'fw': 32}",180,0.01,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,13,2.701709557299845,0.899140625,2.1558961736406013,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.01, 'fw': 64}",180,0.01,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,14,2.709721642070873,0.899140625,2.1519890387804512,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.015, 'fw': 32}",180,0.015,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,15,2.705830300342508,0.899140625,2.1546188995157833,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.015, 'fw': 64}",180,0.015,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,16,2.7207664996103373,0.8978906249999999,2.1645771336756705,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.03, 'fw': 32}",180,0.03,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,17,2.7198187517867503,0.8979687500000001,2.157807634768735,,,,10,"{'window': 180, 'h': 0.8, 'gamma': 0.03, 'fw': 64}",180,0.03,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,18,2.733769261049542,0.898828125,2.1727099050064043,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.01, 'fw': 32}",360,0.01,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,19,2.7112757878700258,0.899140625,2.159870128174166,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.01, 'fw': 64}",360,0.01,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,20,2.7319510709501045,0.898125,2.1683127208545763,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.015, 'fw': 32}",360,0.015,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,21,2.7151861071838157,0.89875,2.1662529045330348,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.015, 'fw': 64}",360,0.015,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,22,2.7516987824294787,0.896484375,2.17830841252477,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.03, 'fw': 32}",360,0.03,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,23,2.730634629877746,0.8975781250000001,2.1668023317524914,,,,10,"{'window': 360, 'h': 0.35, 'gamma': 0.03, 'fw': 64}",360,0.03,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,24,2.7057436100187324,0.8995312500000001,2.1471343453490386,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.01, 'fw': 32}",360,0.01,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,25,2.703806806246886,0.8992968749999999,2.1584036047718653,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.01, 'fw': 64}",360,0.01,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,26,2.707236766351878,0.8985937500000001,2.1530312288580538,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.015, 'fw': 32}",360,0.015,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,27,2.7077985194970937,0.898828125,2.151446760612857,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.015, 'fw': 64}",360,0.015,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,28,2.7257774718071004,0.8966406250000001,2.1513591249924877,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.03, 'fw': 32}",360,0.03,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,29,2.7153463172742986,0.8971875,2.1389782435709006,,,,10,"{'window': 360, 'h': 0.55, 'gamma': 0.03, 'fw': 64}",360,0.03,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,30,2.70300736387216,0.89921875,2.147461603879132,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.01, 'fw': 32}",360,0.01,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,31,2.7013585553640125,0.899453125,2.1501728127267237,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.01, 'fw': 64}",360,0.01,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,32,2.700708436650337,0.89875,2.1408375707894605,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.015, 'fw': 32}",360,0.015,,,,,0.8,32.0,,,True
+stress_weak_recurrence,ridge,spectral_aci,33,2.702910523095001,0.8985937500000001,2.1484922330705256,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.015, 'fw': 64}",360,0.015,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,34,2.7154955902588123,0.8964062500000001,2.1401777755246045,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.03, 'fw': 32}",360,0.03,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_aci,35,2.7177643062610564,0.8966406250000001,2.145123197783419,,,,10,"{'window': 360, 'h': 0.8, 'gamma': 0.03, 'fw': 64}",360,0.03,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,0,2.7259796652072077,0.87921875,2.0388234305641793,,,,10,"{'window': 180, 'h': 0.35, 'fw': 32}",180,,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,1,2.702891326295751,0.8846875000000001,2.0541180294379493,,,,10,"{'window': 180, 'h': 0.35, 'fw': 64}",180,,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,2,2.7057895219701544,0.88578125,2.0506275209994462,,,,10,"{'window': 180, 'h': 0.55, 'fw': 32}",180,,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,3,2.7010559352916106,0.8867968749999999,2.057855864673457,,,,10,"{'window': 180, 'h': 0.55, 'fw': 64}",180,,,,,,0.55,64.0,,,True
+stress_weak_recurrence,ridge,spectral_fixed,4,2.7067581549244992,0.886953125,2.055113507253456,,,,10,"{'window': 180, 'h': 0.8, 'fw': 32}",180,,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,5,2.705583441352144,0.8867968749999999,2.059148186955947,,,,10,"{'window': 180, 'h': 0.8, 'fw': 64}",180,,,,,,0.8,64.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,6,2.753425407097345,0.8734375,1.9953307392984905,,,,10,"{'window': 360, 'h': 0.35, 'fw': 32}",360,,,,,,0.35,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,7,2.7295049675781544,0.8764843750000001,2.006524162726045,,,,10,"{'window': 360, 'h': 0.35, 'fw': 64}",360,,,,,,0.35,64.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,8,2.7447348665545297,0.876171875,1.9965209484490003,,,,10,"{'window': 360, 'h': 0.55, 'fw': 32}",360,,,,,,0.55,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,9,2.7379741888699702,0.875390625,1.999839314749694,,,,10,"{'window': 360, 'h': 0.55, 'fw': 64}",360,,,,,,0.55,64.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,10,2.746895838909802,0.875234375,1.9962727116976933,,,,10,"{'window': 360, 'h': 0.8, 'fw': 32}",360,,,,,,0.8,32.0,,,False
+stress_weak_recurrence,ridge,spectral_fixed,11,2.7434787147265967,0.8751562500000001,1.9988477554876412,,,,10,"{'window': 360, 'h': 0.8, 'fw': 64}",360,,,,,,0.8,64.0,,,False

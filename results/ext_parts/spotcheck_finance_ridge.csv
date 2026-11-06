@@ -1,0 +1,11 @@
+dataset,forecaster,variant,dev_score_grid,dev_score_fullrun,abs_diff
+finance,ridge,aci_clip_ext,2.227106583524423,2.227106583524423,0.0
+finance,ridge,aci_noclip_ext,2.3805893855558673,2.3805893855558673,0.0
+finance,ridge,pid_ext,2.137102647172782,2.137102647172782,0.0
+finance,ridge,spectral_fixed_ext,2.3900698913131366,2.3900698913131366,0.0
+finance,ridge,spectral_aci_ext,2.1831442932315,2.1831442932315,0.0
+finance,ridge,dasc_clip_ext,2.173678355240853,2.173678355240853,0.0
+finance,ridge,dasc_clip_wide,2.224119588070457,2.224119588070457,0.0
+finance,ridge,dasc_noclip_ext,2.26658621741001,2.26658621741001,0.0
+finance,ridge,dasc_noclip_wide,2.2600894043081188,2.2600894043081188,0.0
+finance,ridge,dasc_fixed_ext,2.405636866740269,2.405636866740269,0.0

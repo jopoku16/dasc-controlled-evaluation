@@ -1,0 +1,11 @@
+scenario,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+recurring_amplitude,ridge,rolling,2,360,,,,,,,,,
+recurring_amplitude,ridge,aci_clip,12,360,0.005,,,,,,,,
+recurring_amplitude,ridge,aci_noclip,12,360,0.005,,,,,,,,
+recurring_amplitude,ridge,pid,24,360,,0.025,0.001,0.01,,,,,
+recurring_amplitude,ridge,decay,12,360,,,,,0.995,,,,
+recurring_amplitude,ridge,spectral_fixed,12,360,,,,,,0.8,64.0,,
+recurring_amplitude,ridge,spectral_aci,36,360,0.01,,,,,0.55,64.0,,
+recurring_amplitude,ridge,dasc_fixed,48,360,,,,,,0.8,64.0,0.15,0.5
+recurring_amplitude,ridge,dasc_clip,48,360,,,,,,0.8,32.0,0.45,0.5
+recurring_amplitude,ridge,dasc_noclip,48,360,,,,,,0.8,32.0,0.45,0.5

@@ -1,0 +1,57 @@
+LEAD 2 (phase-blindness kill test): analysis protocol, written 2026-11-02 BEFORE any tuning or evaluation run of the new variants.
+The ALIVE / KILLED thresholds are fixed in the study plan; everything below is the operationalisation chosen
+before the runs. Nothing here was changed after seeing evaluation results.
+
+CELLS: electricity and weather x naive24 and ridge (4 cells). Projected (clipped) updates only. Target 0.90, alpha = 0.10.
+BASELINES (reused by re-running their stored configurations; determinism is checked against the stored summaries):
+  ACI projected   = main-run chosen configuration (results/tuning/<dataset>_<forecaster>_chosen.csv, method aci_clip), 12 configurations
+  DASC tuned      = results/tuning/<dataset>_<forecaster>_dascgamma_chosen.csv, variant dasc_clip, 60 configurations
+
+HOUR-OF-DAY MAD (primary): mean over the 24 clock hours of |coverage_h - 0.90| on the evaluation steps (t >= dev_end), unweighted,
+  exactly the hour-of-day coverage deviation computed in the main study. Clock hour = hour of the true timestamp.
+  Secondary: mean absolute deviation of hourly coverage from its own mean (reported, not used in the verdict).
+
+NEW VARIANTS (module code/lead2_variants.py; dasc_lib.py is not edited):
+  Kernel weight for pool member i at time t:  exp(-(d_mag^2 + w^2 * c^2) / h^2)
+    d_mag = l2 distance of the 6-band magnitude features (unchanged DASC feature, window fw)
+    c     = chord distance between unit vectors (cos a, sin a): 2 |sin((a_t - a_i)/2)|
+    phase variant:    a_t = arg of the daily-frequency DFT coefficient of y[t-m..t-1] (m = min(t, fw); bin fw/24 when m = fw), mean removed
+                      (extrapolated to forecast time t; the advance is a constant rotation for full windows and cancels in c)
+    calendar variant: a_t = 2*pi*hour(t)/24, hour from the timestamp (deterministic, allowed)
+  Drift score D_t, the gate and everything else are the unchanged DASC definitions and use ONLY the six magnitude columns
+  (the 64-step mean of cos/sin is not meaningful because 64 is not a multiple of 24). ACI update projected on [0.01, 0.35].
+  w = 0 reproduces DASC exactly (checked bit for bit).
+
+TUNING (identical grids and identical rules for the phase and the calendar variant; same development prefix 0 <= t < 0.25 n,
+  same criterion: mean interval score at level 0.10 on the development steps; ties broken by earlier configuration, as in tuning.py):
+  stage 1 (48): pool x h x lambda x m_min_frac x fw  = {2 pools} x {0.35,0.55,0.80} x {0.15,0.45} x {0.25,0.5} x {168,336}, gamma = 0.015, w = 1
+  stage 2 (6):  gamma in {0.005,0.01,0.015,0.02,0.03,0.05} at the stage-1 winner
+  stage 3 (12): h in {0.35,0.55,0.80} x w in {0.5,1,2,4} at the stage-2 winner's gamma and the stage-1 structure
+  Total 66 configurations (repeats counted, as DASC tuned counts 48 + 6 + 6 = 60). Budget for ACI projected is 12, for DASC tuned 60.
+  Hindsight (not a selection rule, not used in the verdict): for each variant and cell the evaluation-period MAD of every one of the 66
+  configurations is stored, so the best attainable MAD in the family can be reported as an upper bound on what any tuning could do.
+
+PAIRED INFERENCE: moving-block bootstrap, block 168, 2000 resamples, np.random.default_rng(0), blocks drawn with
+  metrics._block_indices(n, 168, rng) in the same sequence as metrics.paired_block_bootstrap (n = number of evaluation steps),
+  so the blocks are those of results/real_paired_bootstrap_dascgamma.csv. In that one loop the width, coverage, score and the
+  per-resample hour-coverage MAD of every method are computed. Percentile 95% intervals.
+
+PER-CELL TESTS (point estimates unless said; the interval is reported next to each):
+  T1  MAD reduction against ACI projected >= 30%  [(MAD_ACI - MAD_new) / MAD_ACI]
+  T2  MAD reduction against DASC tuned >= 30%
+  T3  marginal coverage of the new variant within 0.01 of 0.90
+  T4  relative width difference against ACI projected AND against DASC tuned <= +1% (point estimate; the upper 95% bound is also reported)
+  T5  not matched by calendar: the paired interval of (MAD_phase - MAD_calendar) lies entirely below zero.
+      Matched = interval includes zero, or phase worse than calendar.
+CELL STATUS: ALIVE if T1..T5 all hold. WEAK-KILL if phase MAD reduction (against either baseline) is below 10%, or phase is matched by calendar (T5 fails).
+VERDICT: ALIVE only if all four cells are ALIVE. KILLED if the reduction is below 10% or phase is matched by calendar in any of the four cells.
+  (The study plan says KILLED if the reduction is below 10% or equals the calendar-hour kernel's; the strict any-cell reading is adopted; the
+  per-cell table is shown so a reader can apply a looser reading.) Anything else: INCONCLUSIVE.
+
+CAVEAT FIXED IN ADVANCE: with about 375 (electricity) or 750 (weather) evaluation steps per hour, even a perfectly conditionally
+  calibrated interval has a nonzero MAD from sampling noise. The noise floor is estimated and reported; if a 30% reduction is
+  impossible in a cell because of the floor, that is reported, the criterion is NOT changed, and the verdict is shown with and without that cell.
+
+INVARIANCE / PREDICTION OF HOUR (Task 1): pairs (t, i), t over the evaluation steps, i drawn uniformly from the 1440 steps before t
+  (30 partners per anchor, seed 0). Spearman correlation of feature distance with circular hour difference min(|dh|, 24-|dh|);
+  95% interval by resampling whole days (blocks of 24 consecutive anchor steps) with the global ranks held fixed.

@@ -1,0 +1,9 @@
+Assumption diagnostic check (model A: assumption exact; B1: conditional independence violated).
+L_min_diag must be <= L_path with high probability in model A.  The old slope is the regression of
+cluster-pair KS on centroid distance (the original verification script); it is shown for comparison.
+
+           model    eta  L_path  L_min_diag_mean  L_min_diag_max  frac_L_min_le_L  old_slope_mean  old_slope_min  old_slope_max  old_R2_mean
+     A_exogenous 0.0500  0.6153           0.0561          0.1119           1.0000          0.0167         0.0000         0.1573       0.0283
+     A_exogenous 0.2000  0.6153           0.0752          0.1319           1.0000          0.0167         0.0000         0.1573       0.0283
+B1_endog_phi0.95 0.0500  0.2750           0.0000          0.0000           1.0000          0.0203         0.0000         0.0957       0.0413
+B1_endog_phi0.95 0.2000  0.2750           0.0000          0.0000           1.0000          0.0203         0.0000         0.0957       0.0413

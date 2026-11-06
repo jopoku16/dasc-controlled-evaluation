@@ -1,0 +1,3 @@
+dataset,forecaster,variant,main_run,stage1_gamma,stage2_h_lambda,total,window,h,fw,drift_lambda,m_min_frac,gamma
+weather,naive24,dasc_clip,48,6,6,60,2160,0.8,168,0.45,0.25,0.05
+weather,naive24,dasc_noclip,48,6,6,60,1080,0.35,168,0.15,0.25,0.01

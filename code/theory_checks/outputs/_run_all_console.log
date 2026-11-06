@@ -1,0 +1,8 @@
+check_perstep_bound.py exit 0
+check_longrun.py exit 0
+check_grid_lemma.py exit 0
+check_mixing_bound.py exit 0
+check_drift_lemma.py exit 0
+check_assumption_diagnostic.py exit 0
+check_combination.py exit 0
+run_all exit 0

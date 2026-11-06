@@ -1,0 +1,19 @@
+Long-run checks. alpha=0.1, gamma=0.015, clip=[0.01,0.35]
+[part 1] real_weather_results.csv: T=22560, mean miss=0.0344, deviation from alpha=-0.0656, identity gap=6.94e-17, recursion max err=8.33e-17, cap steps=0.651, floor steps=0.000, telescoping=-0.00049, projection=-0.06506, old bound=0.00100, new bounds on deviation=[-0.0661, +0.0010]
+[part 1] real_power_results.csv: T=10920, mean miss=0.0967, deviation from alpha=-0.0033, identity gap=4.34e-18, recursion max err=1.11e-16, cap steps=0.018, floor steps=0.000, telescoping=-0.00152, projection=-0.00178, old bound=0.00208, new bounds on deviation=[-0.0039, +0.0021]
+[part 1] real_finance_results.csv: T=2094, mean miss=0.1012, deviation from alpha=+0.0012, identity gap=3.04e-17, recursion max err=1.01e-16, cap steps=0.000, floor steps=0.003, telescoping=-0.00024, projection=+0.00148, old bound=0.01082, new bounds on deviation=[-0.0108, +0.0138]
+[part 2] synthetic seed 0 clipped: mean miss=0.1051, identity gap=6.42e-17, |dev|=0.0051, cap=0.000, floor=0.001, alpha range=[0.010,0.171], free-range bound=0.0517
+[part 2] synthetic seed 0 free: mean miss=0.1051, identity gap=6.33e-17, |dev|=0.0051, cap=0.000, floor=0.002, alpha range=[0.007,0.171], free-range bound=0.0517
+[part 2] synthetic seed 1 clipped: mean miss=0.1025, identity gap=6.07e-17, |dev|=0.0025, cap=0.000, floor=0.002, alpha range=[0.010,0.168], free-range bound=0.0517
+[part 2] synthetic seed 1 free: mean miss=0.1017, identity gap=7.39e-17, |dev|=0.0017, cap=0.000, floor=0.004, alpha range=[0.004,0.168], free-range bound=0.0517
+[part 2] synthetic seed 2 clipped: mean miss=0.1008, identity gap=8.24e-17, |dev|=0.0008, cap=0.000, floor=0.001, alpha range=[0.010,0.154], free-range bound=0.0517
+[part 2] synthetic seed 2 free: mean miss=0.1008, identity gap=8.45e-17, |dev|=0.0008, cap=0.000, floor=0.002, alpha range=[0.007,0.154], free-range bound=0.0517
+[part 2] synthetic seed 3 clipped: mean miss=0.1034, identity gap=5.55e-17, |dev|=0.0034, cap=0.000, floor=0.002, alpha range=[0.010,0.166], free-range bound=0.0517
+[part 2] synthetic seed 3 free: mean miss=0.1025, identity gap=5.42e-17, |dev|=0.0025, cap=0.000, floor=0.002, alpha range=[0.007,0.168], free-range bound=0.0517
+[part 2] synthetic seed 4 clipped: mean miss=0.1017, identity gap=7.39e-17, |dev|=0.0017, cap=0.000, floor=0.000, alpha range=[0.018,0.156], free-range bound=0.0517
+[part 2] synthetic seed 4 free: mean miss=0.1017, identity gap=7.39e-17, |dev|=0.0017, cap=0.000, floor=0.000, alpha range=[0.018,0.156], free-range bound=0.0517
+[part 2] counterexample (constant stream, E_t = 0 always): T=20000, mean miss=0.0000, |deviation|=0.1000, old theorem bound=0.00113, cap steps=0.9917, identity gap=9.71e-17
+[part 3] weather as_published_centre_lag1 clipped: coverage=0.9655, width=6.4086, identity gap=5.55e-17, cap=0.650, floor=0.000, alpha range=[0.100,0.350], telescoping=-0.00049, projection=-0.06502
+[part 3] weather as_published_centre_lag1 free: coverage=0.9005, width=3.8587, identity gap=-1.65e-15, cap=0.778, floor=0.000, alpha range=[0.100,0.811], telescoping=-0.00049, projection=+0.00000
+[part 3] weather recentred_lag24 clipped: coverage=0.8959, width=10.9208, identity gap=2.17e-17, cap=0.044, floor=0.011, alpha range=[0.010,0.350], telescoping=-0.00008, projection=+0.00420
+[part 3] weather recentred_lag24 free: coverage=0.9001, width=10.8474, identity gap=2.01e-17, cap=0.068, floor=0.020, alpha range=[-0.012,0.459], telescoping=-0.00009, projection=+0.00000

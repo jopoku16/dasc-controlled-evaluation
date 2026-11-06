@@ -1,0 +1,12 @@
+quantity,R1,R2
+"spectral_fixed regime coverage R1, R2: paper CSV",0.9785333333333334,0.8242931034482759
+spectral_fixed re-run (100 seeds),0.9785333333333334,0.824293103448276
+formula (ii) at the realised kernel masses (20 seeds),0.9826507856458038,0.8273184138291911
+"formula at the unweighted window composition (rolling conformal, fixed level)",0.9996931337999514,0.8057724690641507
+paper rolling conformal coverage CSV,0.9988,0.8030344827586207
+"mean same-regime kernel weight mass w (regime 1, regime 2)",0.7360232765144333,0.6467735096218205
+mean same-regime share in the unweighted window,0.5537917530031874,0.5258630476664994
+"spectral ACI gamma=0.015: stored CSV (R1, R2)",0.9465666666666668,0.8493620689655172
+spectral ACI gamma=0.015: closure with mean kernel mass pi(t),0.9471266570814588,0.8496085687453886
+"spectral ACI gamma=0.03: stored CSV (R1, R2)",0.9261,0.8682931034482759
+spectral ACI gamma=0.03: closure with mean kernel mass pi(t),0.9265304124423542,0.8706558804499892

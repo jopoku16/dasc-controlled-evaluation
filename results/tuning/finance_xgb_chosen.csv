@@ -1,0 +1,11 @@
+dataset,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+finance,xgb,rolling,2,252,,,,,,,,,
+finance,xgb,aci_clip,12,252,0.05,,,,,,,,
+finance,xgb,aci_noclip,12,252,0.015,,,,,,,,
+finance,xgb,pid,24,504,,0.05,0.001,0.0,,,,,
+finance,xgb,decay,12,504,,,,,0.97,,,,
+finance,xgb,spectral_fixed,12,252,,,,,,0.35,64.0,,
+finance,xgb,spectral_aci,36,252,0.03,,,,,0.35,32.0,,
+finance,xgb,dasc_fixed,48,252,,,,,,0.35,32.0,0.45,0.25
+finance,xgb,dasc_clip,48,252,,,,,,0.35,32.0,0.15,0.25
+finance,xgb,dasc_noclip,48,252,,,,,,0.35,64.0,0.45,0.5

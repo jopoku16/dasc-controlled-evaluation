@@ -1,0 +1,5 @@
+[electricity] done
+code\ext_neff_by_h.py:43: RuntimeWarning: invalid value encountered in scalar divide
+  ne = sw * sw / np.sum(wu * wu)
+[weather] done
+[finance] done

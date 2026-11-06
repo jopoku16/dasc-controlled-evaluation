@@ -1,0 +1,6 @@
+# data are downloaded by the user (see README.md)
+data/
+# derived cache written by datasets.py
+results/derived/
+__pycache__/
+*.pyc

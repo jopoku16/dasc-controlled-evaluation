@@ -1,0 +1,6 @@
+cells with a top-edge choice: [['electricity', 'naive24'], ['electricity', 'xgb'], ['weather', 'naive24'], ['weather', 'xgb'], ['finance', 'naive1']]
+[electricity_naive24] done (33 s): aci_clip: gamma 0.15 (new), spectral_aci: gamma 0.1 (unchanged), dasc_clip: gamma 0.1 (unchanged)
+[electricity_xgb] done (17 s): aci_clip: gamma 0.1 (unchanged), spectral_aci: gamma 0.1 (unchanged), dasc_clip: gamma 0.1 (unchanged)
+[weather_naive24] done (45 s): aci_clip: gamma 0.2 (new), spectral_aci: gamma 0.2 (new), dasc_clip: gamma 0.15 (new)
+[weather_xgb] done (18 s): aci_clip: gamma 0.05 (unchanged), spectral_aci: gamma 0.1 (unchanged), dasc_clip: gamma 0.05 (unchanged)
+[finance_naive1] done (14 s): aci_clip: gamma 0.05 (unchanged), spectral_aci: gamma 0.1 (unchanged), dasc_clip: gamma 0.05 (unchanged)

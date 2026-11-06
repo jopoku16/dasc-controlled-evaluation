@@ -1,0 +1,66 @@
+[finance] n=2514 start=252 dev_end=628 medians={32: 0.6027646915836867, 64: 0.4315582259387182} hgrid={32: [0.1507, 0.3014, 0.35, 0.55, 0.6028, 0.8, 1.206], 64: [0.1079, 0.2158, 0.35, 0.4316, 0.55, 0.8, 0.8631]} (8 s)
+[finance_naive1] tuning (pools (252, 504), fws (32, 64), wide=True)
+   batch 1: 560 configurations x 1 stream(s)
+   batch 1 done (53 s)
+   dasc_clip: stage-1 gamma* = 0.05; final {'window': 252, 'h': 0.55, 'fw': 64, 'drift_lambda': 0.15, 'm_min_frac': np.float64(0.25), 'gamma': 0.05}
+   dasc_clip_wide: final {'window': 504, 'h': 0.35, 'fw': 64, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'gamma': 0.05}
+   dasc_noclip: stage-1 gamma* = 0.015; final {'window': 252, 'h': np.float64(0.35), 'fw': 32, 'drift_lambda': np.float64(0.15), 'm_min_frac': np.float64(0.25), 'gamma': 0.015}
+   dasc_noclip_wide: final {'window': 252, 'h': 0.2158, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64, 'gamma': 0.015}
+   tuning done (63 s); chosen: aci_clip, aci_noclip, dasc_clip, dasc_clip_wide, dasc_fixed, dasc_noclip, dasc_noclip_wide, pid, spectral_aci, spectral_fixed
+[finance_naive1] final runs done (97 s)
+[finance_naive1] done (104 s)
+   aci_clip_ext       gamma=0.05   h=nan      cov=0.8876 width=2.2160 IS=3.5642 neff_med=252.0 pool=252 inf=0
+   aci_noclip_ext     gamma=0.015  h=nan      cov=0.9024 width=2.3412 IS=3.6607 neff_med=252.0 pool=252 inf=10
+   pid_ext            gamma=0.05   h=nan      cov=0.9030 width=2.4282 IS=3.7068 neff_med=504.0 pool=504 inf=0
+   spectral_fixed_ext gamma=nan    h=0.1079   cov=0.8340 width=2.0683 IS=3.7763 neff_med=10.0 pool=252 inf=0
+   spectral_aci_ext   gamma=0.1    h=0.35     cov=0.8855 width=2.2993 IS=3.4820 neff_med=84.9 pool=252 inf=0
+   dasc_clip_ext      gamma=0.05   h=0.55     cov=0.8924 width=2.3737 IS=3.5075 neff_med=61.0 pool=63 inf=0
+   dasc_clip_wide     gamma=0.05   h=0.35     cov=0.8961 width=2.2645 IS=3.5265 neff_med=232.1 pool=405 inf=0
+   dasc_noclip_ext    gamma=0.015  h=0.35     cov=0.9024 width=2.3899 IS=3.4177 neff_med=24.6 pool=63 inf=0
+   dasc_noclip_wide   gamma=0.015  h=0.2158   cov=0.9014 width=2.3906 IS=3.4414 neff_med=42.9 pool=196 inf=10
+   dasc_fixed_ext     gamma=nan    h=0.35     cov=0.8955 width=2.3344 IS=3.5147 neff_med=47.3 pool=142 inf=0
+   rolling            gamma=nan    h=nan      cov=0.8934 width=2.2572 IS=4.1460 neff_med=252.0 pool=252 inf=0
+   decay              gamma=nan    h=nan      cov=0.9019 width=2.2889 IS=3.6218 neff_med=65.6 pool=252 inf=0
+   aci_clip_main      gamma=0.05   h=nan      cov=0.8876 width=2.2160 IS=3.5642 neff_med=252.0 pool=252 inf=0
+   aci_noclip_main    gamma=0.015  h=nan      cov=0.9024 width=2.3412 IS=3.6607 neff_med=252.0 pool=252 inf=10
+   pid_main           gamma=0.05   h=nan      cov=0.9030 width=2.4282 IS=3.7068 neff_med=504.0 pool=504 inf=0
+   spectral_fixed_main gamma=nan    h=0.35     cov=0.9024 width=2.3173 IS=3.8070 neff_med=84.9 pool=252 inf=0
+   spectral_aci_main  gamma=0.03   h=0.35     cov=0.8977 width=2.2893 IS=3.5441 neff_med=151.6 pool=252 inf=0
+   dasc_fixed_main    gamma=nan    h=0.35     cov=0.8955 width=2.3344 IS=3.5147 neff_med=47.3 pool=142 inf=0
+   dasc_clip_main     gamma=0.015  h=0.8      cov=0.9014 width=2.4571 IS=3.6305 neff_med=62.4 pool=63 inf=0
+   dasc_noclip_main   gamma=0.015  h=0.35     cov=0.9024 width=2.3899 IS=3.4177 neff_med=24.6 pool=63 inf=0
+   dasc_clip_prev     gamma=0.05   h=0.55     cov=0.8924 width=2.3737 IS=3.5075 neff_med=61.0 pool=63 inf=0
+   dasc_noclip_prev   gamma=0.015  h=0.35     cov=0.9024 width=2.3899 IS=3.4177 neff_med=24.6 pool=63 inf=0
+[finance_ridge] tuning (pools (252, 504), fws (32, 64), wide=True)
+   batch 1: 560 configurations x 1 stream(s)
+   batch 1 done (77 s)
+   dasc_clip: stage-1 gamma* = 0.05; final {'window': 252, 'h': np.float64(0.35), 'fw': 32, 'drift_lambda': np.float64(0.45), 'm_min_frac': np.float64(0.25), 'gamma': 0.05}
+   dasc_clip_wide: final {'window': 252, 'h': 0.8631, 'fw': 64, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'gamma': 0.03}
+   dasc_noclip: stage-1 gamma* = 0.015; final {'window': 252, 'h': np.float64(0.35), 'fw': 32, 'drift_lambda': np.float64(0.45), 'm_min_frac': np.float64(0.25), 'gamma': 0.015}
+   dasc_noclip_wide: final {'window': 252, 'h': 0.2158, 'drift_lambda': 0.45, 'm_min_frac': 0.5, 'fw': 64, 'gamma': 0.015}
+   tuning done (92 s); chosen: aci_clip, aci_noclip, dasc_clip, dasc_clip_wide, dasc_fixed, dasc_noclip, dasc_noclip_wide, pid, spectral_aci, spectral_fixed
+[finance_ridge] final runs done (144 s)
+[finance_ridge] done (156 s)
+   aci_clip_ext       gamma=0.05   h=nan      cov=0.8940 width=1.8254 IS=3.0070 neff_med=252.0 pool=252 inf=0
+   aci_noclip_ext     gamma=0.015  h=nan      cov=0.9024 width=1.9564 IS=3.0590 neff_med=252.0 pool=252 inf=17
+   pid_ext            gamma=0.01   h=nan      cov=0.9014 width=2.4170 IS=3.5729 neff_med=504.0 pool=504 inf=0
+   spectral_fixed_ext gamma=nan    h=0.2158   cov=0.8982 width=1.8871 IS=3.1152 neff_med=56.4 pool=252 inf=0
+   spectral_aci_ext   gamma=0.05   h=0.3014   cov=0.8961 width=1.9032 IS=3.0665 neff_med=109.6 pool=504 inf=0
+   dasc_clip_ext      gamma=0.05   h=0.35     cov=0.8934 width=1.9657 IS=2.9931 neff_med=47.3 pool=142 inf=0
+   dasc_clip_wide     gamma=0.03   h=0.8631   cov=0.8982 width=1.8610 IS=3.0110 neff_med=195.1 pool=200 inf=0
+   dasc_noclip_ext    gamma=0.015  h=0.35     cov=0.9008 width=2.0397 IS=3.1024 neff_med=47.3 pool=142 inf=0
+   dasc_noclip_wide   gamma=0.015  h=0.2158   cov=0.9019 width=1.9609 IS=2.9872 neff_med=42.9 pool=196 inf=18
+   dasc_fixed_ext     gamma=nan    h=0.35     cov=0.8940 width=1.9178 IS=3.1119 neff_med=47.3 pool=142 inf=0
+   rolling            gamma=nan    h=nan      cov=0.9019 width=1.8781 IS=3.6760 neff_med=252.0 pool=252 inf=0
+   decay              gamma=nan    h=nan      cov=0.9019 width=1.8863 IS=3.1267 neff_med=65.7 pool=504 inf=0
+   aci_clip_main      gamma=0.05   h=nan      cov=0.8940 width=1.8254 IS=3.0070 neff_med=252.0 pool=252 inf=0
+   aci_noclip_main    gamma=0.015  h=nan      cov=0.9024 width=1.9564 IS=3.0590 neff_med=252.0 pool=252 inf=17
+   pid_main           gamma=0.025  h=nan      cov=0.9019 width=2.2385 IS=3.3759 neff_med=504.0 pool=504 inf=0
+   spectral_fixed_main gamma=nan    h=0.35     cov=0.9088 width=1.9238 IS=3.2332 neff_med=151.6 pool=252 inf=0
+   spectral_aci_main  gamma=0.03   h=0.8      cov=0.8977 width=1.8664 IS=3.0193 neff_med=245.2 pool=252 inf=0
+   dasc_fixed_main    gamma=nan    h=0.35     cov=0.8940 width=1.9178 IS=3.1119 neff_med=47.3 pool=142 inf=0
+   dasc_clip_main     gamma=0.015  h=0.35     cov=0.9008 width=2.0183 IS=3.0874 neff_med=47.3 pool=142 inf=0
+   dasc_noclip_main   gamma=0.015  h=0.35     cov=0.9008 width=2.0397 IS=3.1024 neff_med=47.3 pool=142 inf=0
+   dasc_clip_prev     gamma=0.05   h=0.35     cov=0.8934 width=1.9657 IS=2.9931 neff_med=47.3 pool=142 inf=0
+   dasc_noclip_prev   gamma=0.015  h=0.35     cov=0.9008 width=2.0397 IS=3.1024 neff_med=47.3 pool=142 inf=0
+[finance] total 268 s

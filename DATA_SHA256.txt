@@ -1,0 +1,6 @@
+SHA-256 checksums of the three data files from which the stored results were computed (relative to DASC_DATA_ROOT).
+The data files themselves are not part of this repository.
+
+4259c9d7ece5dbee9ab8d53682baac68d791c864f0f64a52b4043cb3b90894b7  uci_household_power/household_power_consumption.txt
+d5f0d6abf90772a416f143775e6616956f3c81a20e353290048add4efb525e00  open_meteo_dallas/open_meteo_dallas_hourly_temperature.csv
+890d7fbd4f4e1b4aa2d75abc986971bbf64bb6f2aeb73d4ebb589e8697f96491  fred_sp500/sp500_daily_fred.csv

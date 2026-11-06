@@ -1,0 +1,3 @@
+dataset,forecaster,variant,main_run,stage1_gamma,stage2_h_lambda,total,window,h,fw,drift_lambda,m_min_frac,gamma
+finance,naive1,dasc_clip,48,6,6,60,252,0.55,64,0.15,0.25,0.05
+finance,naive1,dasc_noclip,48,6,6,60,252,0.35,32,0.15,0.25,0.015

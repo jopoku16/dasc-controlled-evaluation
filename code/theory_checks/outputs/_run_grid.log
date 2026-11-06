@@ -1,0 +1,17 @@
+continuous n=  60 uniform           neff=   60.0 mean sup=0.1081 ex(K*,0.02)=0.0003 ex(K*,0.05)=0.0003 ex(K*,0.1)=0.0005 ex(K*,0.2)=0.0005 | old: 0.0132 0.0360 0.0813 0.1660
+continuous n=  60 kernel_mild       neff=   22.2 mean sup=0.1755 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0003 | old: 0.0127 0.0340 0.0780 0.1638
+continuous n=  60 kernel_sharp      neff=   12.8 mean sup=0.2270 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0003 | old: 0.0100 0.0318 0.0688 0.1510
+continuous n=  60 kernel_very_sharp neff=    6.5 mean sup=0.3144 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0003 | old: 0.0030 0.0160 0.0430 0.1227
+continuous n= 360 uniform           neff=  360.0 mean sup=0.0452 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0185 0.0470 0.0927 0.1893
+continuous n= 360 kernel_mild       neff=  142.9 mean sup=0.0707 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0168 0.0410 0.0840 0.1762
+continuous n= 360 kernel_sharp      neff=   71.9 mean sup=0.0982 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0107 0.0307 0.0727 0.1638
+continuous n= 360 kernel_very_sharp neff=   34.1 mean sup=0.1432 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0152 0.0390 0.0845 0.1700
+discrete   n=  60 uniform           neff=   60.0 mean sup=0.0690 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0020 0.0088 0.0182 0.0343
+discrete   n=  60 kernel_mild       neff=   23.3 mean sup=0.1107 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0020 0.0080 0.0175 0.0362
+discrete   n=  60 kernel_sharp      neff=   10.6 mean sup=0.1649 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0015 0.0063 0.0138 0.0365
+discrete   n=  60 kernel_very_sharp neff=    9.2 mean sup=0.1805 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0013 0.0043 0.0130 0.0365
+discrete   n= 360 uniform           neff=  360.0 mean sup=0.0284 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0013 0.0037 0.0143 0.0375
+discrete   n= 360 kernel_mild       neff=  152.6 mean sup=0.0434 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0018 0.0075 0.0182 0.0375
+discrete   n= 360 kernel_sharp      neff=   71.5 mean sup=0.0639 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0022 0.0065 0.0145 0.0355
+discrete   n= 360 kernel_very_sharp neff=   41.5 mean sup=0.0847 ex(K*,0.02)=0.0000 ex(K*,0.05)=0.0000 ex(K*,0.1)=0.0000 ex(K*,0.2)=0.0000 | old: 0.0005 0.0053 0.0165 0.0398
+grid exit 0

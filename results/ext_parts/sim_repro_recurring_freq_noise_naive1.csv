@@ -1,0 +1,13 @@
+scenario,forecaster,variant,n_seeds,max_abs_cov_diff,max_abs_width_diff
+recurring_freq_noise,naive1,rolling,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,decay,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,aci_clip_main,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,aci_noclip_main,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,pid_main,50,0.0,4.440892098500626e-16
+recurring_freq_noise,naive1,spectral_fixed_main,50,1.1102230246251565e-16,4.440892098500626e-16
+recurring_freq_noise,naive1,spectral_aci_main,50,0.0,8.881784197001252e-16
+recurring_freq_noise,naive1,dasc_fixed_main,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,dasc_clip_main,50,1.1102230246251565e-16,4.440892098500626e-16
+recurring_freq_noise,naive1,dasc_noclip_main,50,1.1102230246251565e-16,8.881784197001252e-16
+recurring_freq_noise,naive1,dasc_clip_prev,50,0.0,8.881784197001252e-16
+recurring_freq_noise,naive1,dasc_noclip_prev,50,1.1102230246251565e-16,8.881784197001252e-16

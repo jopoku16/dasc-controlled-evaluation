@@ -1,0 +1,8 @@
+Bonferroni version of the assumption diagnostic check (per-set level eta / J, J = retained clusters).
+Original L_min_diag values reproduced to 1e-9 for every row.
+
+           model    eta  J_min  J_max  L_path  L_min_orig_max  L_min_bonf_max  frac_le_L_orig  frac_le_L_bonf
+     A_exogenous 0.0500     13     17  0.6153          0.1119          0.0818          1.0000          1.0000
+     A_exogenous 0.2000     13     17  0.6153          0.1319          0.0964          1.0000          1.0000
+B1_endog_phi0.95 0.0500      7     15  0.2750          0.0000          0.0000          1.0000          1.0000
+B1_endog_phi0.95 0.2000      7     15  0.2750          0.0000          0.0000          1.0000          1.0000

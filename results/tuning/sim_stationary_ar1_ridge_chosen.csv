@@ -1,0 +1,11 @@
+scenario,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+stationary_ar1,ridge,rolling,2,360,,,,,,,,,
+stationary_ar1,ridge,aci_clip,12,360,0.005,,,,,,,,
+stationary_ar1,ridge,aci_noclip,12,360,0.005,,,,,,,,
+stationary_ar1,ridge,pid,24,360,,0.05,0.001,0.01,,,,,
+stationary_ar1,ridge,decay,12,360,,,,,0.999,,,,
+stationary_ar1,ridge,spectral_fixed,12,360,,,,,,0.8,64.0,,
+stationary_ar1,ridge,spectral_aci,36,360,0.01,,,,,0.8,64.0,,
+stationary_ar1,ridge,dasc_fixed,48,360,,,,,,0.8,64.0,0.45,0.5
+stationary_ar1,ridge,dasc_clip,48,360,,,,,,0.8,64.0,0.45,0.5
+stationary_ar1,ridge,dasc_noclip,48,360,,,,,,0.8,64.0,0.45,0.5

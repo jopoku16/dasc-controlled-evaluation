@@ -1,0 +1,9 @@
+dataset,forecaster,kind,n_configs,window,h,drift_lambda,m_min_frac,fw,gamma,w
+electricity,naive24,phase,66,720,0.35,0.15,0.5,168,0.05,0.5
+electricity,naive24,cal,66,720,0.55,0.15,0.25,168,0.05,1.0
+electricity,ridge,phase,66,720,0.55,0.15,0.5,336,0.02,1.0
+electricity,ridge,cal,66,1440,0.35,0.45,0.25,168,0.05,1.0
+weather,naive24,phase,66,1080,0.8,0.15,0.25,168,0.05,0.5
+weather,naive24,cal,66,1080,0.55,0.15,0.25,168,0.05,0.5
+weather,ridge,phase,66,2160,0.55,0.15,0.5,336,0.02,4.0
+weather,ridge,cal,66,2160,0.8,0.15,0.25,168,0.015,4.0

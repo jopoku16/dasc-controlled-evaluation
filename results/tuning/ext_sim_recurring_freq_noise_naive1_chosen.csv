@@ -1,0 +1,11 @@
+scenario,forecaster,variant,method,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac,n_configs,stages,dev_score_grid,stage1_gamma
+recurring_freq_noise,naive1,aci_clip_ext,aci_clip,360,0.1,,,,,,,,,14,factorial,3.896916022984024,
+recurring_freq_noise,naive1,aci_noclip_ext,aci_noclip,360,0.01,,,,,,,,,14,factorial,4.410126483462789,
+recurring_freq_noise,naive1,pid_ext,pid,360,,0.1,0.001,0.01,,,,,,56,factorial,3.8958614665916107,
+recurring_freq_noise,naive1,spectral_fixed_ext,spectral_fixed,360,,,,,,0.1771,32.0,,,28,factorial,4.034187733568358,
+recurring_freq_noise,naive1,spectral_aci_ext,spectral_aci,360,0.1,,,,,0.8,64.0,,,196,factorial,3.897892353120902,
+recurring_freq_noise,naive1,dasc_clip_ext,dasc_clip,360,0.1,,,,,0.55,32.0,0.45,0.5,69,main 48 + stage1 7 + stage2 14,3.9068493698507227,0.1
+recurring_freq_noise,naive1,dasc_clip_wide,dasc_clip,180,0.1,,,,,0.55,64.0,0.15,0.25,133,stage0 112 + stage1 7 + stage2 14,3.983704491382755,0.1
+recurring_freq_noise,naive1,dasc_noclip_ext,dasc_noclip,360,0.015,,,,,0.35,32.0,0.45,0.5,69,main 48 + stage1 7 + stage2 14,4.136121726328245,0.015
+recurring_freq_noise,naive1,dasc_noclip_wide,dasc_noclip,360,0.015,,,,,0.35,32.0,0.45,0.5,133,stage0 112 + stage1 7 + stage2 14,4.136121726328245,0.015
+recurring_freq_noise,naive1,dasc_fixed_ext,dasc_fixed,360,,,,,,0.1771,32.0,0.45,0.5,62,main 48 + h x lambda 14,4.154027754007973,

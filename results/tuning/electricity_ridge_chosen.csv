@@ -1,0 +1,11 @@
+dataset,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+electricity,ridge,rolling,2,720,,,,,,,,,
+electricity,ridge,aci_clip,12,1440,0.03,,,,,,,,
+electricity,ridge,aci_noclip,12,1440,0.02,,,,,,,,
+electricity,ridge,pid,24,1440,,0.05,0.001,0.01,,,,,
+electricity,ridge,decay,12,720,,,,,0.97,,,,
+electricity,ridge,spectral_fixed,12,720,,,,,,0.55,168.0,,
+electricity,ridge,spectral_aci,36,1440,0.03,,,,,0.55,168.0,,
+electricity,ridge,dasc_fixed,48,720,,,,,,0.55,168.0,0.15,0.5
+electricity,ridge,dasc_clip,48,1440,,,,,,0.35,168.0,0.15,0.5
+electricity,ridge,dasc_noclip,48,1440,,,,,,0.35,168.0,0.15,0.5

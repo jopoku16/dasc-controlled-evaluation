@@ -1,0 +1,53 @@
+Extended-grid experiment: extended step-size and scaled-bandwidth grids (design as fixed before any run, 2026-11-02)
+
+Question: does "DASC does not beat ACI at an equal tuning budget" survive when (a) every step-size method
+searches the same wider step-size set and (b) the kernel bandwidth grid is scaled to the spread of the
+feature vectors, so that the spectral weights can localise on hourly data?
+
+Pre-stated criterion (fixed before the run; not changed):
+  ROBUST      projected variants, every real cell run: the paired moving-block bootstrap interval for the
+              width difference (DASC minus ACI) includes zero or lies above it, AND no paired
+              interval-score difference against ACI excludes zero in DASC's favour.
+  NOT ROBUST  any cell where DASC has an advantage over ACI with an interval excluding zero in width
+              or in interval score.
+  INCONCLUSIVE  the criterion cannot be evaluated on the planned cells (a cell fails to run, or the
+              baseline re-runs do not reproduce the main-run numbers).
+Operational reading: "excludes zero in DASC's favour" means the 95 per cent percentile interval
+(2000 resamples, seed 0, block lengths 168/168/21, evaluation steps t >= dev_end) lies entirely below zero
+for width_diff or for score_diff (DASC minus ACI). Coverage differences are reported next to each interval
+and do not change the verdict.
+
+Design.
+  Streams: electricity, weather, finance. Forecasters: naive (lag 24 / lag 1) and rolling ridge first;
+  gradient boosting (single-threaded) only if time allows. Same development prefix (dev_end = 0.25 n),
+  same criterion (mean interval score on the development steps), same evaluation steps.
+  Step-size set for EVERY method with a step: gamma in {0.005, 0.01, 0.015, 0.02, 0.03, 0.05, 0.1}.
+    ACI projected, ACI free: pool x gamma (2 x 7 = 14 configurations each).
+    Spectral ACI: pool x h x gamma x feature window (2 x 7 x 7 x 2 = 196).
+    PID: the step-like parameter is kp; kp takes the same seven values; ki in {0.001, 0.003}, kd in {0, 0.01}
+      as in the main run (2 x 7 x 2 x 2 = 56).
+    Spectral fixed (no step): pool x h x feature window (2 x 7 x 2 = 28).
+    Decay-weighted and rolling conformal: no step size; the main-run chosen configuration is re-run.
+    DASC projected and free: two-stage tuning as in run_dascgamma.py. Base = the main-run chosen
+      configuration (pool, feature window, m_min fraction; main-run h and lambda). Stage 1: gamma over the
+      seven values at the base. Stage 2: h (seven values) x lambda in {0.15, 0.45} at the stage-1 gamma.
+      Final = lowest development score over stage 1 and stage 2. Budget 7 + 14 = 21 configurations on top of
+      the 48 of the main run (69 in all).
+  Bandwidth set per dataset and feature window: {0.35, 0.55, 0.8} plus c x m(fw), c in {0.25, 0.5, 1, 2},
+    where m(fw) is the median pairwise Euclidean distance between feature vectors at the development steps
+    start <= t < dev_end (simulations: median over the ten development streams of each stream's median).
+  Optional sensitivity (run only if time allows and labelled as such): DASC with a stage 0, i.e. the
+    main-run style search over pool x h(7) x lambda x m_min x fw at gamma = 0.015 before stages 1 and 2.
+  Workers: at most 2 processes.
+  Tuning runs stop at dev_end; the development score depends only on steps before dev_end (causality), and
+  a spot check against full-stream runs is recorded in ext_dev_spotcheck.csv.
+
+Known asymmetry (stated, not repaired): spectral ACI searches the scaled bandwidths jointly with pool,
+gamma and feature window; DASC meets them only in stage 2 at one gamma, pool, feature window and m_min.
+This errs against DASC, as did the equal-budget study.
+
+Addendum written before any run (2026-11-02): the sensitivity design "wide" (DASC with stage 0) is run next to
+the primary design in the same cells. The verdict is read from the primary design as written above. If the wide
+design alone violates the criterion, the report states that and does not call the headline robust without it.
+Fixed-level DASC (dasc_fixed) is tuned over h (seven values) x lambda at the main-run configuration (14
+configurations) and compared with spectral fixed (28 configurations); this is a secondary comparison.

@@ -1,0 +1,12 @@
+L_path d=1 n=360: knn=0.48394 full=0.48394
+L_path d=1 n=700: knn=0.48394 full=0.48394
+L_path d=2 n=360: knn=0.48385 full=0.48385
+L_path d=2 n=700: knn=0.48392 full=0.48392
+iid bootstrap mean sup|Delta| per pair: [0.0665 0.0649 0.0661 0.0659 0.064  0.0625]
+iid Monte Carlo mean sup|Delta| per pair: [0.0654 0.0653 0.0653 0.0649 0.0643 0.0657]
+PW block length (AR 0.9 on Z): 34 tau_hat: 4.71
+b=34: bootstrap mean sup|Delta| 0.1104   Monte Carlo 0.1178
+b=10: bootstrap mean sup|Delta| 0.1009   Monte Carlo 0.1178
+b=40: bootstrap mean sup|Delta| 0.1093   Monte Carlo 0.1178
+n=360: 0.30 s per replication; last row: {'n': 360, 'rho': 0.5, 'd': 1, 'kappa': 1.0, 'k_target': 6, 'J': 4, 'L_path': 0.4839, 'lag1_R': 0.5858, 'L_cl': 0.4362, 'frac_pairs_true_ks_pos': 1.0, 'C0': 0.1284, 'C0b': 0.1138, 'tau_hat': 1.2835, 'lag1_pit': 0.2448, 'C1': 0.1033, 'C1b': 0.0865, 'b_fixed': 7, 'b_pw': 3, 'B1': 0.2614, 'B2': 0.2634, 'B3': 0.2725, 'ev_B1': 1.0, 'ev_B2': 1.0, 'ev_B3': 1.0, 'supD_max': 0.2003, 'c_B2': 0.2441, 'ev_C0': 1.0, 'ev_C0b': 1.0, 'ev_C1': 1.0, 'ev_C1b': 1.0, 'KShat_max_ratio': 0.5183}
+n=2160: 0.77 s per replication; last row: {'n': 2160, 'rho': 0.5, 'd': 1, 'kappa': 1.0, 'k_target': 20, 'J': 16, 'L_path': 0.4839, 'lag1_R': 0.6729, 'L_cl': 0.4802, 'frac_pairs_true_ks_pos': 1.0, 'C0': 0.2013, 'C0b': 0.1694, 'tau_hat': 1.1496, 'lag1_pit': 0.1414, 'C1': 0.1832, 'C1b': 0.1528, 'b_fixed': 13, 'b_pw': 5, 'B1': 0.3143, 'B2': 0.3333, 'B3': 0.3575, 'ev_B1': 1.0, 'ev_B2': 1.0, 'ev_B3': 1.0, 'supD_max': 0.2709, 'c_B2': 0.3138, 'ev_C0': 1.0, 'ev_C0b': 1.0, 'ev_C1': 1.0, 'ev_C1b': 1.0, 'KShat_max_ratio': 1.1397}

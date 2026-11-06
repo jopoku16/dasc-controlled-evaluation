@@ -1,0 +1,13 @@
+formula,cells_within_0.01,cells,share_within_0.01,median_abs_err,max_abs_err
+F1 linearised closed form,25,36,0.6944444444444444,0.003122547401272,0.0786686603465899
+F2 averaged ODE (periodic steady state),36,36,1.0,0.00029454776842714997,0.0011413783663594
+F3 Gaussian moment closure,36,36,1.0,4.235569304903222e-05,0.0001504893843375
+"F4 exact lattice chain (benchmark, not graded)",36,36,1.0,4.13009820651733e-05,0.0002623898286153
+T_inf trivial: miss = alpha_0 in both regimes,2,36,0.05555555555555555,0.06103449999999995,0.0997865
+T_zero trivial: frozen pooled quantile,15,36,0.4166666666666667,0.01798830239038425,0.0871088381741639
+F1 linearised closed form [informative cells only],23,34,0.6764705882352942,0.003122547401272,0.0786686603465899
+F2 averaged ODE (periodic steady state) [informative cells only],34,34,1.0,0.0003344524394955,0.0011413783663594
+F3 Gaussian moment closure [informative cells only],34,34,1.0,4.509758904232622e-05,0.0001504893843375
+"F4 exact lattice chain (benchmark, not graded) [informative cells only]",34,34,1.0,4.6488176316375474e-05,0.0002623898286153
+T_inf trivial: miss = alpha_0 in both regimes [informative cells only],0,34,0.0,0.06183308333333325,0.0997865
+T_zero trivial: frozen pooled quantile [informative cells only],15,34,0.4411764705882353,0.01495638572371755,0.0871088381741639

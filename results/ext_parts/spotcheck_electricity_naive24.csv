@@ -1,0 +1,11 @@
+dataset,forecaster,variant,dev_score_grid,dev_score_fullrun,abs_diff
+electricity,naive24,aci_clip_ext,4.687213584364245,4.687213584364245,0.0
+electricity,naive24,aci_noclip_ext,4.9950763911820575,4.9950763911820575,0.0
+electricity,naive24,pid_ext,4.748614387947269,4.748614387947269,0.0
+electricity,naive24,spectral_fixed_ext,4.978745668265797,4.978745668265797,0.0
+electricity,naive24,spectral_aci_ext,4.663625606938762,4.663625606938762,0.0
+electricity,naive24,dasc_clip_ext,4.6781862940166565,4.6781862940166565,0.0
+electricity,naive24,dasc_clip_wide,4.6781862940166565,4.6781862940166565,0.0
+electricity,naive24,dasc_noclip_ext,4.897883161406584,4.897883161406584,0.0
+electricity,naive24,dasc_noclip_wide,4.927743524904215,4.927743524904215,0.0
+electricity,naive24,dasc_fixed_ext,5.042575214319923,5.042575214319923,0.0

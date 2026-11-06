@@ -1,0 +1,11 @@
+scenario,forecaster,method,n_configs,window,gamma,kp,ki,kd,decay,h,fw,drift_lambda,m_min_frac
+original_three_phase,ridge,rolling,2,180,,,,,,,,,
+original_three_phase,ridge,aci_clip,12,180,0.02,,,,,,,,
+original_three_phase,ridge,aci_noclip,12,180,0.01,,,,,,,,
+original_three_phase,ridge,pid,24,180,,0.05,0.001,0.01,,,,,
+original_three_phase,ridge,decay,12,360,,,,,0.97,,,,
+original_three_phase,ridge,spectral_fixed,12,180,,,,,,0.35,64.0,,
+original_three_phase,ridge,spectral_aci,36,360,0.015,,,,,0.55,32.0,,
+original_three_phase,ridge,dasc_fixed,48,180,,,,,,0.55,32.0,0.45,0.5
+original_three_phase,ridge,dasc_clip,48,360,,,,,,0.8,32.0,0.45,0.5
+original_three_phase,ridge,dasc_noclip,48,180,,,,,,0.8,32.0,0.15,0.25

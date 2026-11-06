@@ -1,0 +1,16 @@
+dataset,forecaster,method,changed_by_new_steps,gamma,dev_score,config,coverage,width_mean,score_mean
+electricity,naive24,aci_clip,True,0.15,4.663845815170628,"{'window': 720, 'gamma': 0.15}",0.8837777777777778,3.2425008506152437,4.681507820212412
+electricity,naive24,spectral_aci,False,0.1,4.663625606938762,"{'window': 720, 'gamma': np.float64(0.1), 'h': np.float64(0.35), 'fw': 168}",0.8898888888888888,3.3394850012541792,4.699018189966702
+electricity,naive24,dasc_clip,False,0.1,4.6781862940166565,"{'window': 1440, 'gamma': np.float64(0.1), 'h': np.float64(0.55), 'fw': 336, 'drift_lambda': np.float64(0.45), 'm_min_frac': np.float64(0.5)}",0.8895555555555555,3.3285254867726293,4.715126008340202
+electricity,xgb,aci_clip,False,0.1,2.9950592052615126,"{'window': 1440, 'gamma': np.float64(0.1)}",0.8908888888888888,2.048525436573595,2.992911665078703
+electricity,xgb,spectral_aci,False,0.1,2.995129747254693,"{'window': 1440, 'gamma': np.float64(0.1), 'h': np.float64(0.8), 'fw': 168}",0.8908888888888888,2.0495310269356075,2.993188846280539
+electricity,xgb,dasc_clip,False,0.1,2.991232871296615,"{'window': 1440, 'gamma': np.float64(0.1), 'h': np.float64(0.8), 'fw': 168, 'drift_lambda': np.float64(0.15), 'm_min_frac': np.float64(0.5)}",0.8907777777777778,2.0428512906856877,2.9902356447741605
+weather,naive24,aci_clip,True,0.2,8.495482456140351,"{'window': 1080, 'gamma': 0.2}",0.9041666666666667,9.918677777777779,11.722011111111112
+weather,naive24,spectral_aci,True,0.2,8.338289473684211,"{'window': 1080, 'gamma': 0.2, 'h': np.float64(0.00582), 'fw': 336}",0.8993333333333333,9.856366666666666,11.687922222222221
+weather,naive24,dasc_clip,True,0.15,8.533859649122807,"{'window': 2160, 'gamma': 0.15, 'h': np.float64(0.35), 'fw': 168, 'drift_lambda': np.float64(0.15), 'm_min_frac': np.float64(0.25)}",0.9037777777777778,9.899355555555557,11.864133333333335
+weather,xgb,aci_clip,False,0.05,3.835685640600624,"{'window': 1080, 'gamma': np.float64(0.05)}",0.8898888888888888,3.1942434128813857,4.793817269706603
+weather,xgb,spectral_aci,False,0.1,3.761803037488604,"{'window': 1080, 'gamma': np.float64(0.1), 'h': np.float64(0.01898), 'fw': 168}",0.8855,3.111664687847843,4.691531252146927
+weather,xgb,dasc_clip,False,0.05,3.810480704636296,"{'window': 1080, 'gamma': np.float64(0.05), 'h': np.float64(0.01898), 'fw': 168, 'drift_lambda': np.float64(0.15), 'm_min_frac': np.float64(0.5)}",0.8900555555555556,3.2055323256194588,4.728001404123422
+finance,naive1,aci_clip,False,0.05,2.456315939160152,"{'window': 252, 'gamma': np.float64(0.05)}",0.887592788971368,2.2159629277347674,3.564239559636941
+finance,naive1,spectral_aci,False,0.1,2.3620926334274635,"{'window': 252, 'gamma': np.float64(0.1), 'h': np.float64(0.35), 'fw': 32}",0.8854718981972428,2.299267833419979,3.4819954809834828
+finance,naive1,dasc_clip,False,0.05,2.367093875687561,"{'window': 252, 'gamma': np.float64(0.05), 'h': np.float64(0.55), 'fw': 64, 'drift_lambda': np.float64(0.15), 'm_min_frac': np.float64(0.25)}",0.8923647932131495,2.3737359098986204,3.5074695783733643

@@ -1,0 +1,3 @@
+scenario,forecaster,fw,median_of_medians,h_1,h_2,h_3,h_4,h_5,h_6,h_7
+recurring_freq_noise,naive1,32,0.3541793940783784,0.08854,0.1771,0.35,0.3542,0.55,0.7084,0.8
+recurring_freq_noise,naive1,64,0.29502853900054543,0.07376,0.1475,0.295,0.35,0.55,0.5901,0.8

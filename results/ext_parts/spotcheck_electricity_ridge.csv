@@ -1,0 +1,11 @@
+dataset,forecaster,variant,dev_score_grid,dev_score_fullrun,abs_diff
+electricity,ridge,aci_clip_ext,3.0964725196538923,3.0964725196538923,0.0
+electricity,ridge,aci_noclip_ext,3.098495680322406,3.098495680322406,0.0
+electricity,ridge,pid_ext,3.1154004437079026,3.1154004437079026,0.0
+electricity,ridge,spectral_fixed_ext,3.094051260232514,3.094051260232514,0.0
+electricity,ridge,spectral_aci_ext,3.089525786176585,3.089525786176585,0.0
+electricity,ridge,dasc_clip_ext,3.084921478053704,3.084921478053704,0.0
+electricity,ridge,dasc_clip_wide,3.084921478053704,3.084921478053704,0.0
+electricity,ridge,dasc_noclip_ext,3.084921478053704,3.084921478053704,0.0
+electricity,ridge,dasc_noclip_wide,3.084921478053704,3.084921478053704,0.0
+electricity,ridge,dasc_fixed_ext,3.122884048991936,3.122884048991936,0.0

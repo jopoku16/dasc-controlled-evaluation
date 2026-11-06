@@ -1,0 +1,11 @@
+dataset,forecaster,variant,dev_score_grid,dev_score_fullrun,abs_diff
+weather,naive24,aci_clip_ext,8.714517543859648,8.714517543859648,0.0
+weather,naive24,aci_noclip_ext,11.536008771929824,11.536008771929824,0.0
+weather,naive24,pid_ext,8.695350877192983,8.695350877192983,0.0
+weather,naive24,spectral_fixed_ext,11.4425,11.4425,0.0
+weather,naive24,spectral_aci_ext,8.590614035087718,8.590614035087718,0.0
+weather,naive24,dasc_clip_ext,8.678947368421053,8.678947368421053,0.0
+weather,naive24,dasc_clip_wide,8.58421052631579,8.58421052631579,0.0
+weather,naive24,dasc_noclip_ext,11.123377192982458,11.123377192982458,0.0
+weather,naive24,dasc_noclip_wide,11.397763157894737,11.397763157894737,0.0
+weather,naive24,dasc_fixed_ext,11.765350877192983,11.765350877192983,0.0

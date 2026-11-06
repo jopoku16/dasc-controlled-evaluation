@@ -1,0 +1,9 @@
+Drift-score lemma check.
+viol_new: violations of D_t <= recent_gap + dbar_pre (must be 0).
+viol_old: violations of the old remark D_t <= dbar_t (final weights).
+
+   source  cases  viol_new  viol_old  max_excess_old
+   random   5000         0      1230        0.439364
+synthetic  11800         0       557        0.291702
+
+drift exit 0

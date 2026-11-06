@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite them using the metadata in this file."
+title: "Drift-Aware Spectral Conformal Prediction for Non-Exchangeable Streaming Data: A Controlled Evaluation (code and results)"
+type: software
+authors:
+  - family-names: Opoku
+    given-names: Jeffery
+    affiliation: "School of Mathematical and Statistical Sciences, University of Texas Rio Grande Valley"
+  - family-names: Banahene
+    given-names: David
+    affiliation: "Department of Biostatistics, Robert Stempel College of Public Health and Social Work, Florida International University"
+repository-code: "https://github.com/jopoku16/dasc-controlled-evaluation"
+license: MIT
+keywords:
+  - conformal prediction
+  - streaming data
+  - distribution shift
+  - spectral methods
+  - adaptive conformal inference
+# doi: add the persistent identifier here once one has been issued
