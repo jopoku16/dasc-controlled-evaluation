@@ -11,6 +11,8 @@ tables or figures, and no raw data. The tables and figures of the article are pr
 outside this repository. Everything needed to rerun the experiments is here, and the stored results let you check
 parts of the study without rerunning it.
 
+An archived copy of version v1.0.0 is on Zenodo (concept DOI 10.5281/zenodo.24011168; version DOI 10.5281/zenodo.24011169).
+
 Please read `NOTICE.md`: two earlier repositories contain a version of this work whose reported width reductions
 do not hold.
 
